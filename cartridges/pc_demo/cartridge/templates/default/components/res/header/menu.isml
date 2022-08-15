@@ -1,0 +1,108 @@
+<nav class="col-12 navbar navbar-expand-md bg-inverse hide-menu-desktop-custom">
+    <div class="close-menu clearfix d-lg-none">
+        <div class="back pull-left">
+            <button role="button" aria-label="${Resource.msg('label.header.menu.back', 'common', null)}">
+                <span class="caret-left"></span>
+                ${Resource.msg('link.header.menu.back', 'common', null)}
+            </button>
+        </div>
+        <div class="close-button pull-right">
+            <button role="button" aria-label="${Resource.msg('label.header.menu.close', 'common', null)}">
+                ${Resource.msg('link.header.menu.close', 'common', null)}
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+    <div class="menu-group white-1" role="navigation">  <iscomment> navbar-width-menu : not working in low scream </iscomment>
+        <nav class="navc">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Tutorials</a>
+                    <ul>
+                        <li><a>Photoshop</a></li>
+                        <li><a>Illustrator</a></li>
+                        <li><a>Web Design</a>
+                            <ul>
+                                <li><a>HTML</a></li>
+                                <li><a>CSS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Articles</a>
+                    <ul>
+                        <li><a>Web Design</a></li>
+                        <li><a>User Experience</a></li>
+                    </ul>
+                </li>
+                <li><a>Inspiration</a></li>
+            </ul>
+        </nav>
+        <iscomment>
+        <ul class="navbar-nav nav-fill w-100" role="menu">
+            <li class="nav-item hidden-md-down" role="presentation">
+                <a class="" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
+                    <img class="logo-size-nav" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+                </a>
+            </li>
+            <isif condition="${pdict.categories}">
+                <isloop items="${pdict.categories}" var="category">
+                    <isif condition="${category.subCategories}">
+                        <li class="nav-item dropdown dropbtn" role="presentation">
+                            <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="navdivnk dropdown-toggle black-text myDIV" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
+                            <isset name="menuItem" value="${category}" scope="page" />
+                            <isinclude template="components/header/menuItemUno" />
+                        </li>
+                    <iselse/>
+                    </isif>
+                </isloop>
+            </isif>
+            <li class="nav-item hidden-md-down" role="presentation">
+                <isinclude template="components/header/customSearch" />
+            </li>
+            <li class="nav-item " role="presentation">
+                <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="nav-link" role="link" tabindex="0"> Localiza tu tienda </a>
+            </li>
+            <li class="nav-item  d-lg-none" role="presentation">
+                <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="nav-link" role="link" tabindex="0"> Necesitas ayuda </a>
+            </li>
+            <li class="" role="presentation">
+                <img class="logo-size-nav-1" src="${URLUtils.staticURL('/images/location.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+            </li>
+            <li class="hidden-md-down" role="presentation">
+                <img class="logo-size-nav-1" src="${URLUtils.staticURL('/images/user.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+            </li>
+            <li class="hidden-md-down" role="presentation">
+                <img class="logo-size-nav-1" src="${URLUtils.staticURL('/images/shopping.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+            </li>
+            <isinclude url="${URLUtils.url('Account-Header', 'mobile', true)}" />
+            <isinclude url="${URLUtils.url('Page-Locale', 'mobile', true)}" />
+         
+        </ul>
+        </iscomment>
+    </div>
+</nav>
+
+<form class="col-12">
+  <div class="form-row justify-content-center">
+        <isif condition="${pdict.categories}">
+            <isloop items="${pdict.categories}" var="category">
+                <div class="col">
+                    <isif condition="${category.subCategories}">
+                        <div class="nav-item dropdown" role="presentation">
+                            <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
+                            <isset name="menuItem" value="${category}" scope="page" />
+                            <isinclude template="components/header/menuItem" />
+                        </div>
+                    <iselse/>   
+                        <div class="nav-item" role="presentation">
+                            <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="nav-link" role="link" tabindex="0">${category.name}</a>
+                        </div>
+                    </isif>
+                </div>
+            </isloop>
+        </isif>
+  </div>
+</form>
+<iscomment> navbar
+</iscomment>

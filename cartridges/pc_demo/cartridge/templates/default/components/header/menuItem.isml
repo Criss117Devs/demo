@@ -1,0 +1,45 @@
+<div>
+    <ul>
+        <isloop items="${menuItem.subCategories}" var="category">
+            <isif condition="${category.subCategories}">
+                <li  role="presentation">
+                    <a href="${category.url}" id="${category.id}"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
+                   
+                    <isset name="menuItem" value="${category}" scope="page" />
+                    <isinclude template="components/header/menuItemDos" />
+                    
+                </li>
+            <iselse/>
+                <li  role="presentation">
+                    <a href="${category.url}" id="${category.id}" role="menuitem"  tabindex="0">${category.name}</a>
+                </li>
+            </isif>
+        </isloop>
+    </ul>
+<iscomment>
+    <ul>
+        <li><a>Part two: sub item 1</a></li>
+        <li><a>Part two: sub item 2</a></li>
+        <li><a>Part two: sub item 3</a></li>
+        <li><a>Part two: sub item 4</a></li>
+    </ul>
+</iscomment>    
+</div>
+
+<iscomment>
+<ul class="lista1 bg-danger" role="menu" aria-hidden="true" aria-label="${category.id}">
+    <isloop items="${menuItem.subCategories}" var="category">
+        <isif condition="${category.subCategories}">
+            <li class="dropdown-item dropdown" role="presentation">
+                <a href="${category.url}" id="${category.id}" class="dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
+                <isset name="menuItem" value="${category}" scope="page" />
+                <isinclude template="components/header/menuItem" />
+            </li>
+        <iselse/>
+            <li class="dropdown-item" role="presentation">
+                <a href="${category.url}" id="${category.id}" role="menuitem" class="dropdown-link" tabindex="0">${category.name}</a>
+            </li>
+        </isif>
+    </isloop>
+</ul>
+</iscomment>
