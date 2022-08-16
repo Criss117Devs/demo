@@ -5,7 +5,7 @@
         <isprint value="${pdict.regions.headerbanner.render()}" encoding="off"/>
     </isif>
     <nav role="navigation">
-        <div class="header container">
+        <div class="header container-desktop"><iscomment> container </iscomment>
             <div class="row">
                 <div class="col-12">
                     <div class="navbar-header brand">
@@ -42,7 +42,12 @@
         </div>
         <div class="main-menu navbar-toggleable-sm menu-toggleable-left multilevel-dropdown d-none d-md-block" id="sg-navbar-collapse">
             <div class="container-desktop"><iscomment> <iscomment></iscomment>
-                <div class="row">
+                <div class="row" >
+                    <div class="col-12 blue-1 banner-height-desktop">
+                        <p class=" header-banner-title text-center">
+                            ENVÍO GRATIS A PARTIR DE $1000
+                        </p>
+                    </div>
                     <isinclude url="${URLUtils.url('Page-IncludeHeaderMenuDos')}"/>
                     <iscomment>
                         <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}"/>

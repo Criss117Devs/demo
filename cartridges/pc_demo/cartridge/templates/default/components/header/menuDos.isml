@@ -1,47 +1,49 @@
-<nav style="margin-bottom:500px">
-    <ul>
+<iscomment>
+    the class no-spacing-mpremove tha margin inside the class navbar.
+</iscomment>
+<nav class="col-12 nav-menu-desktop navbar no-spacing-mp white-1">
+    <ul class="container ulm" style=" height: 60px;">
+        <li class="lim" role="presentation">
+            <a class="logo-menu-width-desktop" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
+                <img class="logo-menu-desktop" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+            </a>
+        </li>
+        <isif condition="${pdict.categories}">
+            <isloop items="${pdict.categories}" var="category">
+                <isif condition="${category.subCategories}">
+                    <li class="nav-link-menu-desktop lim "  role="presentation">
+                        <a class="a-menu-desktop-block-1" href="<isprint value=" ${category.url}"
+                            encoding="htmldoublequote" />" id="${category.id}"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        tabindex="0">${category.name}</a>
 
-            <isif condition="${pdict.categories}">
-                <isloop items="${pdict.categories}" var="category">
-                    <isif condition="${category.subCategories}">
-                        <li  role="presentation">
-                            <a style="color:white" href="<isprint value=" ${category.url}"
-                                encoding="htmldoublequote" />" id="${category.id}" class=""
-                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                            tabindex="0">${category.name}</a>
+                        <isset name="menuItem" value="${category}" scope="page" />
+                        <isinclude template="components/header/menuItem" />
+                        
+                    </li>
+                <iselse/>
+                    <li class="nav-link-menu-desktop lim" role="presentation">
+                        <a class="a-menu-desktop-block-1" href="<isprint value=" ${category.url}" encoding="htmldoublequote" />"
+                        id="${category.id}" role="link" tabindex="0">${category.name}</a>
+                    </li>
+                </isif>
+            </isloop>
+        </isif>
 
-                            <isset name="menuItem" value="${category}" scope="page" />
-                            <isinclude template="components/header/menuItem" />
-                           
-                        </li>
-                    <iselse/>
-                        <iscomment>
-                        <li role="presentation">
-                            <a href="<isprint value=" ${category.url}" encoding="htmldoublequote" />"
-                            id="${category.id}" class="nav-link" role="link" tabindex="0">${category.name}</a>
-                        </li>
-                        </iscomment>
-                    </isif>
-                </isloop>
-            </isif>
-
-            <li class="nav-item hidden-md-down" role="presentation">
+            <li class="mx-2 nav-link-menu-desktop lim" role="presentation">
                 <isinclude template="components/header/customSearch" />
             </li>
-            <li class="nav-item " role="presentation">
-                <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="nav-link" role="link" tabindex="0"> Localiza tu tienda </a>
+            <li class="mx-2 nav-link-menu-desktop lim" role="presentation">
+                <a class="a-menu-desktop-block-3-text" href="https://www.freecodecamp.org/">Localiza tu tienda</a>
             </li>
-            <li class="nav-item  d-lg-none" role="presentation">
-                <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="nav-link" role="link" tabindex="0"> Necesitas ayuda </a>
+            <li role="presentation">
+                <img class="icons-menu-desktop-size mx-2 nav-link-menu-desktop lim" src="${URLUtils.staticURL('/images/location.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
             </li>
-            <li class="" role="presentation">
-                <img class="logo-size-nav-1" src="${URLUtils.staticURL('/images/location.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+            <li role="presentation">
+                <img class="icons-menu-desktop-size mx-2 nav-link-menu-desktop lim" src="${URLUtils.staticURL('/images/user.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
             </li>
-            <li class=" hidden-md-down" role="presentation">
-                <img class="logo-size-nav-1" src="${URLUtils.staticURL('/images/user.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-            </li>
-            <li class=" hidden-md-down" role="presentation">
-                <img class="logo-size-nav-1" src="${URLUtils.staticURL('/images/shopping.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+            <li role="presentation">
+                <img class="icons-menu-desktop-size mx-2 nav-link-menu-desktop lim" src="${URLUtils.staticURL('/images/shopping.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
             </li>
 
         <iscomment>

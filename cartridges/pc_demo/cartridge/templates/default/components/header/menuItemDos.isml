@@ -1,9 +1,9 @@
-<ul role="menu" aria-hidden="true" aria-label="${category.id}">
+<ul class="full-width-desktop no-spacing-mp ulm" role="menu" aria-hidden="true" aria-label="${category.id}">
     <isloop items="${menuItem.subCategories}" var="category">
         <isif condition="${category.subCategories}">
         <iselse/>
-            <li class="enbloque" role="presentation">
-                <a href="${category.url}" id="${category.id}" role="menuitem" tabindex="0">${category.name}</a>
+            <li class="display-in-block no-spacing-mp lim" role="presentation">
+                <a class="a-menu-desktop-block-3" href="${category.url}" id="${category.id}" role="menuitem" tabindex="0">${category.name}</a>
             </li>
         </isif>
     </isloop>

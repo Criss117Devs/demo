@@ -18848,14 +18848,51 @@ div.availability {
     width: .8em
 }
 
-.logo-nav {
-    width: 50px;
-    height: 50px
+/* colors */
+
+.blue-1 {
+    background-color: #4AC3FD;
 }
 
-.logo-nav1 {
-    width: 60px;
-    height: 60px
+.blue-2 {
+    background-color: #0F1A38;
+}
+
+.blue-3 {
+    background-color: #4AC3FD;
+}
+
+.orange-1 {
+    background-color: #FF5100
+}
+
+.white-1 {
+    background-color: #fff
+}
+
+.white-text {
+    color: white;
+}
+
+/* icons  */
+.logo-menu-width-desktop {
+    width: 40px;
+    height: 40px
+}
+
+.logo-menu-desktop {
+    width: 40px;
+    height: 40px
+}
+
+.icons-menu-desktop-size {
+    width: 25px;
+    height: 25px;
+}
+
+.nav-link-menu-desktop {
+    display: block;
+    padding: 5px, 0, 5px, 0px;
 }
 
 .container-desktop {
@@ -18863,113 +18900,119 @@ div.availability {
     margin-right: 15px;
 }
 
+.no-spacing-mp {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.header-banner-title {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 8px;
+}
+
+.banner-height-desktop {
+    height: 45px;
+}
+
+/* mega menu *//*
 .menu-desktop:hover {
     margin-bottom: 200px;
 }
+*/
+.nav-menu-desktop {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.menuItem-desktop { /* sobre el menu sobre el banner*/
+   /* padding-top: 20px;*/
+    position: absolute;
+    top:50px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.menuItem-desktop ul li {
+    margin-left:50px;
+}
+
+.ulm {
+    list-style: none;
+}
+
+.lim {
+    display: inline-block;
+}
+ /* text  */
+.a-menu-desktop-block-1 {
+    display: block;
+    text-decoration: none;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    width: 95px;
+    height: 40px;
+    color: #000000;
+}
+
+.a-menu-desktop-block-2 {
+    display: block;
+    text-decoration: none;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    text-align: left;
+}
+
+.a-menu-desktop-block-3 {
+    display: block;
+    text-decoration: none;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.full-width-desktop {
+    width:100%;
+}
+
+.display-in-block {
+    display: block;
+}
+
+.a-menu-desktop-block-3-text {
+    width: 118px;
+    height: 22px;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
 
 /*
-.submenu-nav-item-select {
-    text-align: center;
-    width: 100%;
-   
-    padding: 0;
-    margin: 0;
-    height: 60px;
-    position: relative;
-}
-
-.submenu-nav-item-select .ulc {
-  
-    list-style: none;
-    padding: 0 20px;
-    margin: 0;
-    height: 60px;
-
-}
-
-
-.submenu-nav-item-select .ulc li {
-    display: inline-block;
-}
-
-
-.submenu-nav-item-select .ulc li a {
-    color: #333333;
-    display: block;
-    padding: 0px 40px;
-    text-decoration: none;
-    float: left;
-    height: 60px;
-    line-height: 60px;
-}
-
-.submenu-nav-item-select .ulc li:hover {
-    background: #333333;
-}
-
-
-.submenu-nav-item-select .ulc li:hover>a {
-    color: #FFFFFF;
-}
-
-.submenu-nav-item-select .ulc li:hover>ul {
-    display: block;
-}
-
-.submenu-nav-item-select .ulc li .ver:hover>ul {
-    display: inline;
-}
-
-.submenu-nav-item-select .ulc ul {
-    background: #BEBEBE;
-    padding: 0;
-    text-align: center;
-    display: none;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0px;
-}
-
-.submenu-nav-item-select  li ul li ul li{
-    background: green !important;
-    width: 10px !important;
-    height: 10px  !important;
-    font-size: 5px;
-    display: inline-block !important;
-}
-
-submenu-nav-item-select ul li ul li ul li a {
-    width: 10px !important;
-    height: 10px  !important;
-}
-*/
-
-nav {
-    position: relative;
-    background: darkgrey;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline-block;
-}
-
-a {
-    display: block;
-    padding: 10px;
-    font-family: sans-serif;
-    font-size: 2em;
-    text-decoration: none;
-    color: grey;
-}
-
 a:hover {
     background: #efefef;
-}
+}*/
 
 li div {
     display: none;
@@ -18983,19 +19026,25 @@ li:hover div {
     display: block;
 }
 
+/* mover a clases */
 li div ul {
     display: inline-block;
     vertical-align: top;
 }
-/*
-li div ul li .enbloque {
-    display: inline;
-}
-*/
 
-.enbloque {
-    display: block;
+li div ul li ul{
+    margin-left: 0px !important;
+    padding-left: 0px !important;
 }
+
+li div ul li ul li{
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+}
+
+/* */
+
+
 li div ul li a {
     font-size: 1em;
     color: white;
