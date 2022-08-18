@@ -18854,7 +18854,7 @@ div.availability {
     background-color: #4AC3FD;
 }
 
-.blue-2 {
+.bg-blue-2 {
     background-color: #0F1A38;
 }
 
@@ -18862,16 +18862,20 @@ div.availability {
     background-color: #4AC3FD;
 }
 
-.orange-1 {
+.bg-orange-1 {
     background-color: #FF5100
 }
 
-.white-1 {
+.bg-white-1 {
     background-color: #fff
 }
 
 .white-text {
     color: white;
+}
+
+.black-text {
+    color: black;
 }
 
 /* icons  */
@@ -18890,22 +18894,20 @@ div.availability {
     height: 25px;
 }
 
-.nav-link-menu-desktop {
-    display: block;
-    padding: 5px, 0, 5px, 0px;
-}
-
 .container-desktop {
     margin-left: 15px;
     margin-right: 15px;
 }
 
+/* spacing and margins */
 .no-spacing-mp {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
 }
+
+/* */
 
 .header-banner-title {
     font-family: 'Saira';
@@ -18926,88 +18928,8 @@ div.availability {
     margin-bottom: 200px;
 }
 */
-.nav-menu-desktop {
-    position: relative;
-    width: 100%;
-    height: 60px;
-}
-
-.menuItem-desktop { /* sobre el menu sobre el banner*/
-   /* padding-top: 20px;*/
-    position: absolute;
-    top:50px;
-    background-color: #fff;
-    z-index: 1;
-}
-
-.menuItem-desktop ul li {
-    margin-left:50px;
-}
-
-.ulm {
-    list-style: none;
-}
-
-.lim {
-    display: inline-block;
-}
  /* text  */
-.a-menu-desktop-block-1 {
-    display: block;
-    text-decoration: none;
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-    width: 95px;
-    height: 40px;
-    color: #000000;
-}
 
-.a-menu-desktop-block-2 {
-    display: block;
-    text-decoration: none;
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    color: #000000;
-    text-align: left;
-}
-
-.a-menu-desktop-block-3 {
-    display: block;
-    text-decoration: none;
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #000000;
-}
-
-.full-width-desktop {
-    width:100%;
-}
-
-.display-in-block {
-    display: block;
-}
-
-.a-menu-desktop-block-3-text {
-    width: 118px;
-    height: 22px;
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-    color: #000000;
-}
 
 /*
 a:hover {
@@ -19050,31 +18972,8 @@ li div ul li a {
     color: white;
 }
 
-/* Input search */
 
-.search-label-icon-custom {
-    position: relative;
-}
-  
-.search-label-icon-custom:before {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background-image: url("../images/searchpng.png");
-    background-position: center;
-    background-repeat: contain;
-    background-repeat: no-repeat;
-}
-  
-.search-input-custom {
-    padding: 10px 10px;
-    height:40px;
-    border: none;
-}
-
-.search-custom-header-border {
-    border: 1px solid black;
-}
+/*
+https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-DemoPuntoCommerse-Site/default/Search-Show?cgid=womens
+https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewLdsBusinessManagerScreen-PageDesigner/#/edit/page/homepage
+*/

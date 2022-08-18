@@ -1,9 +1,6 @@
-<iscomment>
-    the class no-spacing-mpremove tha margin inside the class navbar.
-</iscomment>
-<nav class="col-12 nav-menu-desktop navbar no-spacing-mp white-1">
-    <ul class="container ulm" style=" height: 60px;">
-        <li class="lim" role="presentation">
+<nav class="col-12 desktop-menu navbar no-spacing-mp bg-white">
+    <ul class="desktop-menu-ul container"> <iscomment> the classcontainer center the elements </iscomment>
+        <li class="desktop-menu-ul-li" role="presentation">
             <a class="logo-menu-width-desktop" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
                 <img class="logo-menu-desktop" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
             </a>
@@ -11,8 +8,8 @@
         <isif condition="${pdict.categories}">
             <isloop items="${pdict.categories}" var="category">
                 <isif condition="${category.subCategories}">
-                    <li class="nav-link-menu-desktop lim "  role="presentation">
-                        <a class="a-menu-desktop-block-1" href="<isprint value=" ${category.url}"
+                    <li class="desktop-menu-ul-li desktop-menu-ul-li-margen-2"  role="presentation">
+                        <a class="desktop-menu-ul-li-a" href="<isprint value=" ${category.url}"
                             encoding="htmldoublequote" />" id="${category.id}"
                         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                         tabindex="0">${category.name}</a>
@@ -22,29 +19,29 @@
                         
                     </li>
                 <iselse/>
-                    <li class="nav-link-menu-desktop lim" role="presentation">
-                        <a class="a-menu-desktop-block-1" href="<isprint value=" ${category.url}" encoding="htmldoublequote" />"
+                    <li class="desktop-menu-ul-li desktop-menu-ul-li-margen-2" role="presentation">
+                        <a class="desktop-menu-ul-li-a" href="<isprint value=" ${category.url}" encoding="htmldoublequote" />"
                         id="${category.id}" role="link" tabindex="0">${category.name}</a>
                     </li>
                 </isif>
             </isloop>
         </isif>
 
-            <li class="mx-2 nav-link-menu-desktop lim" role="presentation">
-                <isinclude template="components/header/customSearch" />
-            </li>
-            <li class="mx-2 nav-link-menu-desktop lim" role="presentation">
-                <a class="a-menu-desktop-block-3-text" href="https://www.freecodecamp.org/">Localiza tu tienda</a>
-            </li>
-            <li role="presentation">
-                <img class="icons-menu-desktop-size mx-2 nav-link-menu-desktop lim" src="${URLUtils.staticURL('/images/location.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-            </li>
-            <li role="presentation">
-                <img class="icons-menu-desktop-size mx-2 nav-link-menu-desktop lim" src="${URLUtils.staticURL('/images/user.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-            </li>
-            <li role="presentation">
-                <img class="icons-menu-desktop-size mx-2 nav-link-menu-desktop lim" src="${URLUtils.staticURL('/images/shopping.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-            </li>
+        <li class="desktop-menu-ul-li" role="presentation">
+            <isinclude template="components/header/customSearch" />
+        </li>
+        <li class="desktop-menu-ul-li" role="presentation">
+            <a class="a-menu-desktop-block-3-text" href="https://www.freecodecamp.org/">Localiza tu tienda</a>
+        </li>
+        <li class="desktop-menu-ul-li" role="presentation">
+            <img class="icons-menu-desktop-size desktop-menu-ul-li" src="${URLUtils.staticURL('/images/location.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+        </li>
+        <li class="desktop-menu-ul-li" role="presentation">
+            <img class="icons-menu-desktop-size desktop-menu-ul-li" src="${URLUtils.staticURL('/images/user.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+        </li>
+        <li class="desktop-menu-ul-li" role="presentation">
+            <img class="icons-menu-desktop-size desktop-menu-ul-li" src="${URLUtils.staticURL('/images/shopping.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+        </li>
 
         <iscomment>
         <li><a>Menu 1</a>
