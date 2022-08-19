@@ -5,7 +5,7 @@
         <isprint value="${pdict.regions.headerbanner.render()}" encoding="off"/>
     </isif>
     <nav role="navigation">
-        <div class="header container d-md-none">
+        <div class="header container"><iscomment>d-md-none</iscomment>
             <div class="row">
                 <div class="col-12">
                     <div class="navbar-header brand">
@@ -14,9 +14,9 @@
                             <img class="d-lg-none" src="${URLUtils.staticURL('/images/logo-small.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
                         </a>
                     </div>
-                    <div class="navbar-header">
+                    <div class="navbar-header ">
                         <div class="pull-left">
-                            <div class="hidden-md-down">
+                            <div class=""><iscomment>hidden-md-down</iscomment>
                                 <isinclude url="${URLUtils.url('Account-Header')}" />
                                 <isinclude url="${URLUtils.url('Page-Locale')}" />
                             </div>

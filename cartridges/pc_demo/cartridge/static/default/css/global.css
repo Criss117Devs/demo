@@ -2105,7 +2105,7 @@ pre code {
         display: block;
         width: 100%;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch
+        -webkit-overflow-scrolling: touch;
     }
 
     .table-responsive-xl>.table-bordered {
@@ -16341,7 +16341,7 @@ a.skip:hover {
         left: 0
     }
 }
-
+/*
 @media (max-width:1199.98px) {
     .menu-toggleable-left.navbar-toggleable-lg {
         position: fixed;
@@ -16355,6 +16355,23 @@ a.skip:hover {
 
     .menu-toggleable-left.navbar-toggleable-lg.in {
         min-width: 50%;
+        left: 0
+    }
+}
+*/
+@media (max-width:1200px) {
+    .menu-toggleable-left.navbar-toggleable-lg {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        transition: left .5s cubic-bezier(0, 1, .5, 1);
+        display: block;
+        max-width: 100%
+    }
+
+    .menu-toggleable-left.navbar-toggleable-lg.in {
+        min-width: 99%;
         left: 0
     }
 }
@@ -16417,14 +16434,34 @@ a.skip:hover {
         color: #fff
     }
 }
-
+/* 
+start:
+This breakpoint was commented out so that the screen retains its functionality of displaying the menu on
+screens smaller than 1200px
 @media (max-width:768.98px) {
     .main-menu.menu-toggleable-left {
         background-color: #fff;
         z-index: 4
     }
 }
-
+New breakpoint 1200px
+*/
+/* start
+This breakpoint was commented out so that the screen retains its functionality of showing the hide menu button on screens smaller than 1200px
+@media (max-width:700px) {
+    .main-menu.menu-toggleable-left {
+        background-color: #fff;
+        z-index: 4
+    }
+}
+*/
+@media (max-width:1200px) {
+    .main-menu.menu-toggleable-left {
+        background-color: #fff;
+        z-index: 4
+    }
+}
+/* end */
 .menu-toggleable-left .close-menu {
     padding: 15px;
     background-color: #eee;
@@ -16433,7 +16470,7 @@ a.skip:hover {
     flex: 0 0 100%
 }
 
-@media (min-width:769px) {
+@media (min-width:1200px) {
     .menu-toggleable-left .close-menu {
         display: none
     }
@@ -18974,17 +19011,22 @@ li div ul li a {
 
 
 .hide-menu-desktop-custom {
-    margin-bottom: 1px;
 }
 
 .show-menu-movil-custom {
-    margin-bottom: 1px;
 }
+
+.show-menu-movil-custom-1 {
+}
+
 
 @media (min-width:1200px) {
     .show-menu-movil-custom {
         display: none;
     }
+    /*.show-menu-movil-custom-1 {
+        display: none;
+    }*/
     .hide-menu-desktop-custom {
         display: block;
     }
@@ -18997,8 +19039,10 @@ li div ul li a {
     .show-menu-movil-custom {
         display: block;
     }
+    /*.show-menu-movil-custom-1 {
+        display: none;
+    }*/
 }
-
 
 /*
 https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-DemoPuntoCommerse-Site/default/Search-Show?cgid=womens
