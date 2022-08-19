@@ -18973,6 +18973,33 @@ li div ul li a {
 }
 
 
+.hide-menu-desktop-custom {
+    margin-bottom: 1px;
+}
+
+.show-menu-movil-custom {
+    margin-bottom: 1px;
+}
+
+@media (min-width:1200px) {
+    .show-menu-movil-custom {
+        display: none;
+    }
+    .hide-menu-desktop-custom {
+        display: block;
+    }
+}
+
+@media (max-width:1200px) {
+    .hide-menu-desktop-custom {
+        display: none;
+    }
+    .show-menu-movil-custom {
+        display: block;
+    }
+}
+
+
 /*
 https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-DemoPuntoCommerse-Site/default/Search-Show?cgid=womens
 https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewLdsBusinessManagerScreen-PageDesigner/#/edit/page/homepage

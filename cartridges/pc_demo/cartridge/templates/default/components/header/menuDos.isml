@@ -1,4 +1,4 @@
-<nav class="col-12 desktop-menu navbar no-spacing-mp bg-white">
+<nav class="col-12 desktop-menu navbar no-spacing-mp bg-white hide-menu-desktop-custom">
     <ul class="desktop-menu-ul container"> <iscomment> the classcontainer center the elements </iscomment>
         <li class="desktop-menu-ul-li" role="presentation">
             <a class="logo-menu-width-desktop" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">

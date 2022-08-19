@@ -19041,31 +19041,6 @@ boostrap hide end shw
     line-height: 22px;
 }
 
-.hide-menu-desktop-custom {
-    margin-bottom: 1px;
-}
-
-.show-menu-movil-custom {
-    margin-bottom: 1px;
-}
-
-@media (min-width:1200px) {
-    .show-menu-movil-custom {
-        display: none;
-    }
-    .hide-menu-desktop-custom {
-        display: block;
-    }
-}
-
-@media (max-width:1200px) {
-    .hide-menu-desktop-custom {
-        display: none;
-    }
-    .show-menu-movil-custom {
-        display: block;
-    }
-}
 
 .row-1 { /* Elimina el margen por defecto de 15px lr */
     display: -ms-flexbox;
