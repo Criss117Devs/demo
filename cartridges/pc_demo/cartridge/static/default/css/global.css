@@ -18915,6 +18915,10 @@ div.availability {
     color: black;
 }
 
+.blue-text {
+    color: #2D64FC;
+}
+
 /* icons  */
 .logo-menu-width-desktop {
     width: 40px;
@@ -18944,21 +18948,26 @@ div.availability {
     padding-bottom: 0px !important;
 }
 
+
+
+.icons-menu-spacing-movil {
+    margin-left:7%;
+    margin-right:7%;
+}
+
 /* */
 
 .header-banner-title {
+    height: 45px;
     font-family: 'Saira';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
     color: #000000;
-    margin-top: 8px;
+    padding-top: 8px;
 }
 
-.banner-height-desktop {
-    height: 45px;
-}
 
 /* mega menu *//*
 .menu-desktop:hover {
@@ -19014,11 +19023,16 @@ li div ul li a {
 }
 
 .show-menu-movil-custom {
+    height: 60px;
+    width:100%;
+}
+
+.show-menu-movil-custom-div {
+    height: 60px;
 }
 
 .show-menu-movil-custom-1 {
 }
-
 
 @media (min-width:1200px) {
     .show-menu-movil-custom {
@@ -19050,6 +19064,11 @@ li div ul li a {
     display: inline;
 }
 
+.center-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*
 https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-DemoPuntoCommerse-Site/default/Search-Show?cgid=womens
 https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewLdsBusinessManagerScreen-PageDesigner/#/edit/page/homepage

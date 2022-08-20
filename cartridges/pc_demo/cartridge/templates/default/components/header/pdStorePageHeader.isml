@@ -5,25 +5,26 @@
         <isprint value="${pdict.regions.headerbanner.render()}" encoding="off"/>
     </isif>
     <nav role="navigation">
-        <div class="header container show-menu-movil-custom"><iscomment>d-md-none</iscomment>
-            <div class="d-flex justify-content-center" style="width:100%">
-                    <div class="mx-2">
-                        <a class="" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
-                            <img class="" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+        <p class="header-banner-title text-center bg-info mt-0 mb-0">ENVÍO GRATIS A PARTIR DE $1000</p>
+        <div class="header container show-menu-movil-custom bg-danger "><iscomment>d-md-none</iscomment>
+            <div class="d-flex justify-content-center show-menu-movil-custom-div center-items">
+                    <div class="icons-menu-spacing-movil">
+                        <a class="logo-menu-width-desktop" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
+                            <img class="logo-menu-desktop" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
                         </a>
                     </div>
-                    <div class="mx-2 bg-danger" style="display: flex; align-items: center; justify-content: center;">
+                    <div class="icons-menu-spacing-movil bg-danger" >
                         <a class="bg-warning" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
                             <img class="" src="${URLUtils.staticURL('/images/search.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
                         </a>
                     </div>
-                    <div class="mx-2">
+                    <div class="icons-menu-spacing-movil">
                         <img class="" src="${URLUtils.staticURL('/images/user.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
                     </div>
                     <div class="minicart" data-action-url="${URLUtils.url('Cart-MiniCartShow')}">
                         <isinclude url="${URLUtils.url('Cart-MiniCart')}" />
                     </div>
-                    <div class="mx-2">
+                    <div class="icons-menu-spacing-movil">
                         <div><iscomment>hidden-md-down</iscomment>
                             <isinclude url="${URLUtils.url('Account-Header')}" />
                             <isinclude url="${URLUtils.url('Page-Locale')}" />
@@ -64,13 +65,10 @@
         <div class="main-menu navbar-toggleable-lg menu-toggleable-left multilevel-dropdown d-none d-md-block" id="sg-navbar-collapse">
             <div class="container-desktop">
                 <div class="row" >
-                    <div class="col-12 blue-1 banner-height-desktop">
-                        <p class=" header-banner-title text-center">
-                            ENVÍO GRATIS A PARTIR DE $1000
-                        </p>
-                    </div>
+
                     <isinclude url="${URLUtils.url('Page-IncludeHeaderMenuDesktop')}"/>
                     <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}"/>
+                    <div class="float-right">Float right on all viewport sizes</div><br>
                 </div>
             </div>
         </div>

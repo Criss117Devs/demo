@@ -39,8 +39,8 @@
         <li class="desktop-menu-ul-li" role="presentation">
             <img class="icons-menu-desktop-size desktop-menu-ul-li" src="${URLUtils.staticURL('/images/user.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
         </li>
-        <li class="desktop-menu-ul-li" role="presentation">
-            <img class="icons-menu-desktop-size desktop-menu-ul-li" src="${URLUtils.staticURL('/images/shopping.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-        </li>
+        <div class="minicart" data-action-url="${URLUtils.url('Cart-MiniCartShow')}">
+            <isinclude url="${URLUtils.url('Cart-MiniCart')}" />
+        </div>
     </ul>
 </nav>
