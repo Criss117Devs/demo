@@ -1,12 +1,12 @@
 <nav class="navbar navbar-expand-lg col-12 show-menu-movil-custom bg-danger">
-    <div class="close-menu clearfix bg-dark">
-        <div class="back pull-left">
+    <div class="close-menu clearfix bg-warning">
+        <div class="back pull-left bg-primary">
             <button role="button" aria-label="${Resource.msg('label.header.menu.back', 'common', null)}">
                 <span class="caret-left"></span>
                 ${Resource.msg('link.header.menu.back', 'common', null)}
             </button>
         </div>
-        <div class="close-button pull-right">
+        <div class="close-button pull-right bg-info">
             <button role="button" aria-label="${Resource.msg('label.header.menu.close', 'common', null)}">
                 ${Resource.msg('link.header.menu.close', 'common', null)}
                 <span aria-hidden="true">&times;</span>

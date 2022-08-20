@@ -19,7 +19,7 @@ server.extend(module.superModule);
  * @param {serverfunction} - get
  */
  server.get(
-    'IncludeHeaderMenuDos',
+    'IncludeHeaderMenuDesktop',
     function (req, res, next) {
         var catalogMgr = require('dw/catalog/CatalogMgr');
         var Categories = require('*/cartridge/models/categories');
@@ -28,7 +28,7 @@ server.extend(module.superModule);
         var topLevelCategories = siteRootCategory.hasOnlineSubCategories() ?
             siteRootCategory.getOnlineSubCategories() : null;
 
-        res.render('/components/header/menuDos', new Categories(topLevelCategories));
+        res.render('/components/header/menuDesktop', new Categories(topLevelCategories));
         next();
     }
 );
