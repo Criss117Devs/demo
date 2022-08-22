@@ -1,130 +1,129 @@
 <footer class="bg-blue-2" id="footercontent">
-    <div class="container">
-        <div class="footer-container row">
-            <div class="footer-item col-sm-12 col-md-12 col-lg-2">
-                <iscontentasset aid="footer-terms-and-conditions" />
-            </div>
-            <div class="footer-item col-sm-12 col-md-12 col-lg-2">
-                <iscontentasset aid="footer-website" />
-            </div>
-            <div class="footer-item col-sm-12 col-md-12 col-lg-2">
-                <iscontentasset aid="footer-company-information" />
-            </div>
-            <div class="footer-item col-sm-12 col-md-12 col-lg-4">
-                <iscomment>
-                    <iscontentasset aid="footer-credit-card" />
-                </iscomment>
-                
-                <div class="row justify-content-md-center">
-                    <div class="col-7">
-                        <button type="button" class="footer-button-mail-custom ">Correo electrónico</button>
-                    </div>
-                    <div class="col-5">
-                        <button type="button" class="footer-button-joinus-custom ">Suscríbete</button>
-                    </div>
+    <div class="footer-container row-1">
+        <div class="footer-item col-sm-12 col-md-12 col-lg-2">
+            <iscontentasset aid="footer-terms-and-conditions" />
+        </div>
+        <div class="footer-item col-sm-12 col-md-12 col-lg-2">
+            <iscontentasset aid="footer-website" />
+        </div>
+        <div class="footer-item col-sm-12 col-md-12 col-lg-2">
+            <iscontentasset aid="footer-company-information" />
+        </div>
+        <div class="footer-item col-sm-12 col-md-12 col-lg-4">
+            <iscomment>
+                <iscontentasset aid="footer-credit-card" />
+            </iscomment>
+            
+            <div class="row justify-content-md-center">
+                <div class="col-7">
+                    <button type="button" class="footer-button-mail-custom ">Correo electrónico</button>
                 </div>
-                <div class="row ustify-content-md-center my-1">
-                    <div class="col-4 blaxk-text">
-                        <p class="without-mp-style white-text">Siguenos</p>
-                    </div>
-                    <div class="col-8 blaxk-text">
-                        <p class="without-mp-style white-text">Pagos Seguros</p>
-                    </div>
+                <div class="col-5">
+                    <button type="button" class="footer-button-joinus-custom ">Suscríbete</button>
                 </div>
-                <div class="row justify-content-md-center">
-                    <div class="col-4">
-                        <div class="btn-group" role="group" aria-label="Basic example">
+            </div>
+            <div class="row ustify-content-md-center my-1">
+                <div class="col-4 blaxk-text">
+                    <p class="without-mp-style white-text">Siguenos</p>
+                </div>
+                <div class="col-8 blaxk-text">
+                    <p class="without-mp-style white-text">Pagos Seguros</p>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-4">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <div class="minicart-total hide-link-med">
+                            <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
+                                <i class="minicart-icon fa fa-facebook-official white-text"></i>
+                                <span class="minicart-quantity">
+                                    <isprint value="${pdict.quantityTotal}" formatter="##" />
+                                </span>
+                            </a>
+                        </div>
+                        <div class="mx-2">
                             <div class="minicart-total hide-link-med">
                                 <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
-                                    <i class="minicart-icon fa fa-shopping-cart white-text"></i>
-                                    <span class="minicart-quantity">
-                                        <isprint value="${pdict.quantityTotal}" formatter="##" />
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="mx-2">
-                                <div class="minicart-total hide-link-med">
-                                    <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
-                                        <i class="minicart-icon fa fa-shopping-cart white-text"></i>
-                                        <span class="minicart-quantity">
-                                            <isprint value="${pdict.quantityTotal}" formatter="##" />
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="minicart-total hide-link-med">
-                                <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
-                                    <i class="minicart-icon fa fa-shopping-cart white-text"></i>
+                                    <i class="minicart-icon fa fa-instagram white-text"></i>
                                     <span class="minicart-quantity">
                                         <isprint value="${pdict.quantityTotal}" formatter="##" />
                                     </span>
                                 </a>
                             </div>
                         </div>
+                        <div class="minicart-total hide-link-med">
+                            <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
+                                <i class="minicart-icon fa fa-youtube-play white-text"></i>
+                                <span class="minicart-quantity">
+                                    <isprint value="${pdict.quantityTotal}" formatter="##" />
+                                </span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-8">
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                            <div class="minicart-total hide-link-med mr-2">
-                                <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
-                                    <i class="minicart-icon fa fa-cc-mastercard white-text"></i>
-                                    <span class="minicart-quantity">
-                                        <isprint value="${pdict.quantityTotal}" formatter="##" />
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="minicart-total hide-link-med mr-2">
-                                <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
-                                    <i class="minicart-icon fa fa-cc-visa white-text"></i>
-                                    <span class="minicart-quantity">
-                                        <isprint value="${pdict.quantityTotal}" formatter="##" />
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="minicart-total hide-link-med mr-2">
-                                <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
-                                    <i class="minicart-icon fa fa-cc-paypal white-text"></i>
-                                    <span class="minicart-quantity">
-                                        <isprint value="${pdict.quantityTotal}" formatter="##" />
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="minicart-total hide-link-med mr-2">
-                                <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
-                                    <i class="minicart-icon fa fa-cc-discover white-text"></i>
-                                    <span class="minicart-quantity">
-                                        <isprint value="${pdict.quantityTotal}" formatter="##" />
-                                    </span>
-                                </a>
-                            </div>
+                </div>
+                <div class="col-8">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <div class="minicart-total hide-link-med mr-2">
+                            <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
+                                <i class="minicart-icon fa fa-cc-mastercard white-text"></i>
+                                <span class="minicart-quantity">
+                                    <isprint value="${pdict.quantityTotal}" formatter="##" />
+                                </span>
+                            </a>
+                        </div>
+                        <div class="minicart-total hide-link-med mr-2">
+                            <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
+                                <i class="minicart-icon fa fa-cc-visa white-text"></i>
+                                <span class="minicart-quantity">
+                                    <isprint value="${pdict.quantityTotal}" formatter="##" />
+                                </span>
+                            </a>
+                        </div>
+                        <div class="minicart-total hide-link-med mr-2">
+                            <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
+                                <i class="minicart-icon fa fa-cc-paypal white-text"></i>
+                                <span class="minicart-quantity">
+                                    <isprint value="${pdict.quantityTotal}" formatter="##" />
+                                </span>
+                            </a>
+                        </div>
+                        <div class="minicart-total hide-link-med mr-2">
+                            <a class="minicart-link" href="${URLUtils.https('Cart-Show')}" title="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-label="${Resource.msgf('minicart.count','common',null, pdict.quantityTotal)}" aria-haspopup="true">
+                                <i class="minicart-icon fa fa-cc-discover white-text"></i>
+                                <span class="minicart-quantity">
+                                    <isprint value="${pdict.quantityTotal}" formatter="##" />
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-2 ">
-                <a class="" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
-                    <img class="logo-size-footer" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-                </a>
-            </div>
         </div>
-        <iscomment>
-        <hr class="hidden-xs-down" />
-        <div class="row">
-            <div class="col-lg-4 col-sm-5 push-sm-7 push-lg-8 social">
-                <isslot id="footer-column-m" description="Content in column 1 of the Footer" context="global" />
-                <button class="back-to-top" title="${Resource.msg('button.back_to_top', 'common', null)}" aria-label="${Resource.msg('button.back_to_top', 'common', null)}">
-                    <span class="fa-stack fa-lg" aria-hidden="true">
-                        <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
-                        <i class="fa fa-arrow-up fa-stack-1x"></i>
-                    </span>
-                </button>
-            </div>
-            <div class="col-lg-8 col-sm-7 pull-sm-5 pull-lg-4 copyright-notice">
-              
-                <iscontentasset aid="footer-copy" />
-             
-            </div>
+        <div class="col-sm-12 col-md-12 col-lg-2 center-items">
+            <a href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
+                <img class="footer-logo-a" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+            </a>
         </div>
-        </iscomment>
     </div>
+    <iscomment>
+    <hr class="hidden-xs-down" />
+    </iscomment>
+    <div class="row-1 bg-warning mb-0">
+    <iscomment>
+        <div class="col-lg-4 col-sm-5 push-sm-7 push-lg-8 social">
+            <isslot id="footer-column-m" description="Content in column 1 of the Footer" context="global" />
+            <button class="back-to-top" title="${Resource.msg('button.back_to_top', 'common', null)}" aria-label="${Resource.msg('button.back_to_top', 'common', null)}">
+                <span class="fa-stack fa-lg" aria-hidden="true">
+                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                    <i class="fa fa-arrow-up fa-stack-1x"></i>
+                </span>
+            </button>
+        </div>
+    </iscomment>    
+        <div class="col-12 copyright-notice " >
+            <iscomment><iscontentasset aid="footer-copy" /></iscomment>
+            (C) 2022 Cormag Llantas / Quickfit. Todos los derechos reservados. Hecho con amor de Punto Commerce
+        </div>
+    </div>
+    
 </footer>
-

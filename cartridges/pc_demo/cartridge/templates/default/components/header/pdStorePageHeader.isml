@@ -68,7 +68,6 @@
 
                     <isinclude url="${URLUtils.url('Page-IncludeHeaderMenuDesktop')}"/>
                     <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}"/>
-                    <div class="float-right">Float right on all viewport sizes</div><br>
                 </div>
             </div>
         </div>

@@ -17005,7 +17005,7 @@ a.normal {
 footer {
     background-color: #e9ecef;
     padding-top: 1.25em;
-    padding-bottom: 1.25em
+    /* padding-bottom: 1.25em */
 }
 
 footer h2 {
@@ -19068,6 +19068,13 @@ li div ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.row-1 { /* Elimina el margen por defecto de 15px lr */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 /*
 https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-DemoPuntoCommerse-Site/default/Search-Show?cgid=womens

@@ -1,0 +1,51 @@
+.footer-button-mail-custom {
+    width: 216px;
+    height: 30px;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #0F1A38;
+    border: 1px solid white;
+    padding-bottom: 2px;
+}
+
+.footer-button-joinus-custom {
+    width: 145px;
+    height: 30px;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #FF5100;
+    background: #FF5100;
+    padding-bottom: 2px;
+}
+
+.footer-title-list {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+.footer-logo-a {
+    height: 97px;
+    width: 114px;
+}
+
+.footer-a-custom {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
