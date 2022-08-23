@@ -3,15 +3,18 @@
         <isloop items="${menuItem.subCategories}" var="category">
             <isif condition="${category.subCategories}">
                 <li class="menu-items-desktop-ul-li" role="presentation">
-                    <a href="${category.url}" id="${category.id}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
+                    <a href="${category.url}" id="${category.id}" class="menu-items-desktop-ul-li-a-submenu a1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
                     <isset name="menuItem" value="${category}" scope="page" />
                     <isinclude template="components/header/menuItemSubcategories" />
                 </li>
             <iselse/>
                 <li class="menu-items-desktop-ul-li" role="presentation">
-                    <a href="${category.url}" id="${category.id}" role="menuitem" tabindex="0">${category.name}</a>
+                    <a href="${category.url}" class="menu-items-desktop-ul-li-a-submenu a1" id="${category.id}" role="menuitem" tabindex="0">${category.name}</a>
                 </li>
             </isif>
         </isloop>
+        <li class="menu-items-desktop-ul-li-img-selected" role="presentation">
+            <img class="menu-items-desktop-img-selected"  src="${URLUtils.staticURL('/images/rubicon.png')}" alt="" /> <iscomment>${Resource.msg('global.storename', 'common', null)}</iscomment>
+        </li>
     </ul>
 </div>

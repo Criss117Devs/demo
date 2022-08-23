@@ -49,11 +49,13 @@
                 <isinclude url="${URLUtils.url('Page-IncludeHeaderMenuDesktop')}"/>
                 <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}"/>
                 <isinclude template="components/header/pdStorePageFormDesktop" />
+               
             </div>
         </div>
        
         <iscomment>
             <div class="search-mobile d-sm-none">
+             
                 <isinclude template="components/header/search" />
             </div>
         </iscomment>

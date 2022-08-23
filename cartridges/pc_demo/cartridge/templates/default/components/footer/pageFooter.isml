@@ -1,5 +1,5 @@
 <footer class="bg-blue-2" id="footercontent">
-    <div class="footer-container row-1">
+    <div class="footer-container row-1 container">
         <div class="footer-item col-sm-12 col-md-12 col-lg-2">
             <iscontentasset aid="footer-terms-and-conditions" />
         </div>
@@ -108,7 +108,7 @@
     <iscomment>
     <hr class="hidden-xs-down" />
     </iscomment>
-    <div class="row-1 bg-warning mb-0">
+    <div class="row-1 mb-0">
     <iscomment>
         <div class="col-lg-4 col-sm-5 push-sm-7 push-lg-8 social">
             <isslot id="footer-column-m" description="Content in column 1 of the Footer" context="global" />

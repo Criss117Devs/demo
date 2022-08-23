@@ -15,7 +15,7 @@
     assets.addJs('/js/campaignBanner.js');
     assets.addCss('/css/global.css');
     assets.addCss('/css/megaMenu.css');
-   /*assets.addCss('/css/footer.css');*/
+    assets.addCss('/css/footer.css');
 </isscript>
 
 <!DOCTYPE html>
