@@ -16410,12 +16410,23 @@ a.skip:hover {
     background-color: #fff;
     color: #444
 }
-
+/*
 @media (min-width:769px) {
     .nav-item>.nav-link {
         color: #fff
     }
 }
+*/
+/*
+@media (min-width:769px) {
+    .nav-item>.nav-link {
+        color: #000
+    }
+    .nav-item-submenu>.nav-link-submenu {
+        color: #fff
+    }
+}
+*/
 
 @media (max-width:768.98px) {
     .main-menu.menu-toggleable-left {
@@ -16965,7 +16976,7 @@ a.normal {
 }
 
 footer {
-    background-color: #e9ecef;
+    background-color: #0F1A38; /* background-color: #e9ecef; */
     padding-top: 1.25em;
     padding-bottom: 1.25em
 }
@@ -18847,60 +18858,35 @@ div.availability {
     width: .8em
 }
 
-/* colors */
+/*
+boostrap hide end shw 
+*/
 
-.bg-blue-1 {
-    background-color: #4AC3FD;
+.without-mp-style {
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
-.bg-blue-2 {
-    background-color: #0F1A38;
-}
-
-.blue-3 {
-    background-color: #4AC3FD;
-}
-
-.bg-orange-1 {
-    background-color: #FF5100
-}
-
-.bg-white-1 {
-    background-color: #fff
-}
-
-.white-text {
-    color: white;
-}
+@media screen and (max-width) {
+   
+ }
 
 .black-text {
     color: black;
 }
 
-.blue-text {
-    color: #2D64FC;
+.logo-size-footer {
+    text-align: center;
+    width: 90px;
+    height: 90px;
 }
 
-.row-1 { /* Elimina el margen por defecto de 15px lr */
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+.logo-size-nav {
+    height: 40px;
+    width: 40px;
+    margin-top: 8px;
 }
 
-.no-marginx-no-paddingx {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-.no-marginy-no-paddingy {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
 
 .header-banner-title {
     font-family: 'Saira';
@@ -18909,9 +18895,268 @@ div.availability {
     font-size: 18px;
     line-height: 28px;
     color: #000000;
-    padding-top: 8px;
 }
 
-.banner-height {
-    height: 45px;
+.custom-mt-10 {
+    margin-top: 10px;
 }
+
+.navbar-width-menu {
+    max-height: 60px;
+}
+
+.icon-spacing-nav {
+    margin-right: 15px;
+    margin-left: 15px
+}
+
+.icon-spacing-left-nav {
+    margin-left: 15px
+}
+
+
+.search-custom-nav-1 {
+    position: relative;
+    top: 10px;
+}
+
+.conteiner-main {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.search-label-icon-custom {
+    position: relative;
+}
+  
+.search-label-icon-custom:before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background-image: url("../images/searchpng.png");
+    background-position: center;
+    background-repeat: contain;
+    background-repeat: no-repeat;
+}
+  
+.search-input-custom {
+    padding: 10px 10px;
+    height:40px;
+    border: none;
+}
+
+.search-custom-header-border {
+    border: 1px solid black;
+}
+
+
+.blue-1 {
+    background-color: #4AC3FD;
+}
+
+.blue-2 {
+    background-color: #0F1A38;
+}
+
+.blue-3 {
+    background-color: #4AC3FD;
+}
+
+.orange-1 {
+    background-color: #FF5100
+}
+
+.white-1 {
+    background-color: #fff
+}
+
+.white-text {
+    color: white;
+}
+
+.nav-height-custom {
+    height:60px;
+}
+
+.footer-div-mail-custom {
+    height:240px
+}
+
+.footer-button-mail-custom {
+    width: 216px;
+    height: 30px;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #0F1A38;
+    border: 1px solid white;
+    padding-bottom: 2px;
+}
+
+.footer-button-joinus-custom {
+    width: 145px;
+    height: 30px;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #FF5100;
+    background: #FF5100;
+    padding-bottom: 2px;
+}
+
+.footer-title-list {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.footer-a-custom {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: pink;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #000;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+  .navc {
+    text-align:center;
+    width: 100%;
+    background: #bebebe;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    position:relative;
+  }
+  
+  .navc ul {
+    background: #bebebe;
+    list-style:none;
+    padding:0 20px;
+    margin: 0;
+    height: 60px;
+  
+  }
+  
+  
+  .navc ul li {
+    display: inline-block;
+  }
+  
+  
+  .navc ul li a {
+    color:#333333;
+    display:block;
+    padding:0px 40px;
+    text-decoration:none;
+    float: left;
+    height: 60px;
+     line-height: 60px;
+  }
+  
+  .navc ul li:hover {
+    background: #333333;
+  }
+  
+  
+  .navc ul li:hover > a{
+      color:#FFFFFF;
+  }
+  
+  .navc ul li:hover > ul {
+    display:block;
+  }
+  
+  .navc ul ul {
+    background: #BEBEBE;
+    padding:0;
+    text-align: center;
+    display:none;
+      width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+  }
+  
+
+/*
+
+
+.logo-style {
+    height: 50px;
+    width: 50px;
+}
+
+
+.div-search-orange {
+    width:150px;
+}
+
+
+
+.custom-height-1 {
+    height:60px;
+}
+
+.custom-height-2 {
+    height:32px;
+}
+
+
+
+.nav-link-1 {
+}
+*/

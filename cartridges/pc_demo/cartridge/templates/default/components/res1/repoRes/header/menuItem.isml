@@ -1,0 +1,17 @@
+<div class="desktop-menu-item-one li-div">
+    <ul class="li-div-ul">
+        <isloop items="${menuItem.subCategories}" var="category">
+            <isif condition="${category.subCategories}">
+                <li class="desktop-menu-item-one-ul-li"  role="presentation">
+                    <a class="desktop-menu-item-one-ul-li-a li-div-ul-li-a" href="${category.url}" id="${category.id}"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
+                    <isset name="menuItem" value="${category}" scope="page" />
+                    <isinclude template="components/header/menuItemDos" />
+                </li>
+            <iselse/>
+                <li class="desktop-menu-item-one-ul-li"  role="presentation">
+                    <a class="desktop-menu-item-one-ul-li-a li-div-ul-li-a" href="${category.url}" id="${category.id}" role="menuitem"  tabindex="0">${category.name}</a>
+                </li>
+            </isif>
+        </isloop>
+    </ul>
+</div>

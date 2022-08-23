@@ -1,0 +1,47 @@
+<nav class="col-12 desktop-menu navbar no-spacing-mp hide-menu-desktop-custom bg-white-1">
+    <ul class="desktop-menu-ul"> <iscomment> the classcontainer center the elements </iscomment>
+        <li class="desktop-menu-ul-li desktop-menu-ul-li-margen-2" role="presentation">
+            <a class="logo-menu-width-desktop" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
+                <img class="logo-menu-desktop" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+            </a>
+        </li>
+        <isif condition="${pdict.categories}">
+            <isloop items="${pdict.categories}" var="category">
+                <isif condition="${category.subCategories}">
+                    <li class="desktop-menu-ul-li desktop-menu-ul-li-margen-2 li-hover"  role="presentation">
+                        <a class="desktop-menu-ul-li-a" href="<isprint value=" ${category.url}"
+                            encoding="htmldoublequote" />" id="${category.id}"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        tabindex="0">${category.name}</a>
+
+                        <isset name="menuItem" value="${category}" scope="page" />
+                        <isinclude template="components/header/menuItem" />
+                        
+                    </li>
+                <iselse/>
+                    <li class="desktop-menu-ul-li desktop-menu-ul-li-margen-2 li-hover" role="presentation">
+                        <a class="desktop-menu-ul-li-a" href="<isprint value=" ${category.url}" encoding="htmldoublequote" />"
+                        id="${category.id}" role="link" tabindex="0">${category.name}</a>
+                    </li>
+                </isif>
+            </isloop>
+        </isif>
+        <div class="search desktop-menu-ul-li desktop-menu-ul-li-margen-2">
+            <isinclude template="components/header/search" />
+        </div>
+        <li class="desktop-menu-ul-li desktop-menu-ul-li-margen-2" role="presentation">
+            <a class="a-menu-desktop-block-3-text" href="https://www.freecodecamp.org/">Localiza tu tienda</a>
+        </li>
+        <li class="desktop-menu-ul-li desktop-menu-ul-li-margen-2" role="presentation">
+            <img class="icons-menu-desktop-size desktop-menu-ul-li" src="${URLUtils.staticURL('/images/location.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+        </li>
+        <li class="desktop-menu-ul-li desktop-menu-ul-li-margen-2" role="presentation">
+            <img class="icons-menu-desktop-size desktop-menu-ul-li" src="${URLUtils.staticURL('/images/user.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+        </li>
+        <div class="desktop-menu-ul-li desktop-menu-ul-li-margen-2 minicart" data-action-url="${URLUtils.url('Cart-MiniCartShow')}">
+            <isinclude url="${URLUtils.url('Cart-MiniCart')}" />
+        </div>
+        <isinclude url="${URLUtils.url('Account-Header', 'mobile', true)}" />
+        <isinclude url="${URLUtils.url('Page-Locale', 'mobile', true)}" />
+    </ul>
+</nav>

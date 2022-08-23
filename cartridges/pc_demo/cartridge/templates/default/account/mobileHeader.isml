@@ -1,0 +1,27 @@
+<isif condition="${pdict.name === null}">
+    <li class="nav-item " role="menuitem"><iscomment>d-lg-none</iscomment>
+        <a  class="nav-link" href="${URLUtils.https('Login-Show')}" >
+            <iscomment> <i class="fa fa-sign-in" aria-hidden="true"></i> </iscomment>
+            <img alt="" src="${URLUtils.staticURL('/images/user.svg')}" />
+            <iscomment><span class="user-message">${Resource.msg('link.header.login', 'account', null)}</span></iscomment>
+        </a>
+    </li>
+<iselse/>
+    <li class="nav-item dropdown" role="menuitem"><iscomment>d-lg-none</iscomment>
+        <span class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+            <span class="user-message">${pdict.name}</span>
+        </span>
+        <ul class="dropdown-menu" role="menu" aria-hidden="true">
+            <li class="dropdown-item" role="menuitem">
+                <a href="${URLUtils.https('Account-Show')}" class="dropdown-link" role="button">${Resource.msg('link.header.myaccount', 'account', null)}</a>
+            </li>
+            <li class="dropdown-item" role="menuitem">
+                <a href="${URLUtils.url('Order-History')}" class="dropdown-link" role="button">${Resource.msg('label.myorders', 'account', null)}</a>
+            </li>
+            <li class="dropdown-item" role="menuitem">
+                <a href="${URLUtils.url('Login-Logout')}" class="dropdown-link" role="button">${Resource.msg('link.header.logout', 'account', null)}</a>
+            </li>
+        </ul>
+    </li>
+</isif>

@@ -1,145 +1,84 @@
-
-.nav-menu-desktop {
-    position: relative;
-    width: 100%;
+.nav-height-desktop {
     height: 60px;
 }
 
-.desktop-menu {
+.menu-items-desktop {
+    width: 100% !important;
     position: relative;
-    width: 100%;
+    z-index: 2;
     height: 60px;
 }
 
-.desktop-menu-ul {
+.menu-items-desktop-ul {
     list-style: none;
-    height: 60px;
-    width: 100%;
+    
 }
 
-/* Input search */
-
-.search-label-icon-custom {
-    position: relative;
-    margin-top: 6px;
-}
-  
-.search-label-icon-custom:before {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background-image: url("../images/searchpng.png");
-    background-position: center;
-    background-repeat: contain;
-    background-repeat: no-repeat;
-}
-
-.desktop-menu-ul-li {
+.menu-items-desktop-ul-li {
     display: inline-block;
 }
 
-.desktop-menu-ul-li-a {
+a {
     display: block;
-    text-decoration: none;
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 500;
+    padding: 20px;
+    font-family: sans-serif;
     font-size: 14px;
-    line-height: 22px;
-    /*width: 95px;*/
-    height: 60px;
-    color: #000000;
-    text-align: center;
-    padding-top: 20px;
+    text-decoration: none;
+    color: grey;
 }
 
-.desktop-menu-ul-li-search {
-    background-color: blue;
+a:hover {
+    background: #efefef;
 }
 
-/*
-    51px design margin for left and right. too big. changed to 20px 8/17/22
-*/
-.desktop-menu-ul-li-margen-1 {
-    margin-right: 15px;
-    margin-left: 15px;
- }
- 
- .desktop-menu-ul-li-margen-2 {
-     margin-right: 1px;
-     margin-left: 1px;
-  }
- 
-
-.desktop-menu-item-one { /* posiciosobre el menu sobre el banner*/
-   /* padding-top: 20px;*/
+.menu-items-desktop-ul-li-div {
+    
+    display: none;
+    width: 100%;
+    height: auto;
     position: absolute;
-    top:60px;
-    background-color: #fff;
-    z-index: 1;
+    left: 0;
 }
 
-.desktop-menu-item-one-ul-li {
-    margin-left:50px;
+.menu-items-desktop-ul-li:hover .menu-items-desktop-ul-li-div {
+    display: block;
+}
+
+.ul-vertical {
+    vertical-align: top;
+    list-style: none;
+    margin: 0;
+    padding: 8px;
     display: inline-block;
 }
 
-.desktop-menu-item-two-ul {
-    list-style: none;
+.menu-items-desktop-logo {
+    width: 18px;
+    height: 18px;
 }
 
-.desktop-menu-item-two-ul-li-a {
-    width: 118px;
-    height: 22px;
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-    color: #000000;
+
+.hide-menu-desktop-custom {
+   height: 60px;
 }
 
-.desktop-menu-item-one-ul-li-a {
-    display: block;
-    text-decoration: none;
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    color: #000000;
-    text-align: left;
-}
-  
-.search-input-custom {
-   /* padding: 10px 10px;*/
-    height:40px;
-    border: none;
+.show-menu-movil-custom {
 }
 
-.search-custom-header-border {
-    border: 1px solid black;
+@media (min-width:1200px) {
+    .show-menu-movil-custom {
+        display: none;
+    }
+    .hide-menu-desktop-custom {
+        display: block;
+    }
 }
 
-.a-menu-desktop-block-3 {
-    display: block;
-    text-decoration: none;
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #000000;
-}
-
-.full-width-desktop {
-    width:100%;
-}
-
-.display-in-block {
-    display: block;
+@media (max-width:1200px) {
+    .hide-menu-desktop-custom {
+        display: none;
+    }
+    .show-menu-movil-custom {
+        display: block;
+    }
 }

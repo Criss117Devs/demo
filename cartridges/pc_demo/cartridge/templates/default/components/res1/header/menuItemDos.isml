@@ -1,8 +1,8 @@
-<ul class="desktop-menu-item-two-ul" role="menu" aria-hidden="true" aria-label="${category.id}">
+<ul class="desktop-menu-item-two-ul li-div-ul-li-ul li-div-ul" role="menu" aria-hidden="true" aria-label="${category.id}">
     <isloop items="${menuItem.subCategories}" var="category">
         <isif condition="${category.subCategories}">
         <iselse/>
-            <li role="presentation">
+            <li class="li-div-ul-li-ul-li" role="presentation">
                 <a class="desktop-menu-item-two-ul-li-a" href="${category.url}" id="${category.id}" role="menuitem" tabindex="0">${category.name}</a>
             </li>
         </isif>

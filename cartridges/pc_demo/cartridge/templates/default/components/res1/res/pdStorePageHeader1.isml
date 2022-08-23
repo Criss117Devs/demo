@@ -1,0 +1,125 @@
+<header>
+    <isinclude template="/components/header/skipNav" />
+    <isif condition="${pdict.regions.headerbanner}">
+        <!-- Campaign Banner Component renders here -->
+        <isprint value="${pdict.regions.headerbanner.render()}" encoding="off"/>
+    </isif>
+    <nav role="navigation">
+        <p class="header-banner-title text-center bg-info mt-0 mb-0">ENVÍO GRATIS A PARTIR DE $1000</p>
+        <div class="header container show-menu-movil-custom "><iscomment>d-md-none</iscomment>
+            <div class="d-flex justify-content-center show-menu-movil-custom-div center-items">
+                    <div class="icons-menu-spacing-movil">
+                        <a class="logo-menu-width-desktop" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
+                            <img class="logo-menu-desktop" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+                        </a>
+                    </div>
+                    <div class="icons-menu-spacing-movil" >
+                        <a class="bg-warning" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
+                            <img class="" src="${URLUtils.staticURL('/images/search.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+                        </a>
+                    </div>
+                    <div class="icons-menu-spacing-movil">
+                        <img class="" src="${URLUtils.staticURL('/images/user.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+                    </div>
+                    <div class="minicart" data-action-url="${URLUtils.url('Cart-MiniCartShow')}">
+                        <isinclude url="${URLUtils.url('Cart-MiniCart')}" />
+                    </div>
+                    <div class="icons-menu-spacing-movil">
+                        <div class=""><iscomment>hidden-md-down</iscomment>
+                            <isinclude url="${URLUtils.url('Account-Header')}" />
+                            <isinclude url="${URLUtils.url('Page-Locale')}" />
+                        </div>
+                        <button class="navbar-toggler" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                            &#9776; <iscomment><span class="hidden-xs-down">Menu</span></iscomment>
+                        </button>
+                    </div>
+                <iscomment>
+                <div class="col-12 show-menu-movil-custom">
+                    
+                    
+                    
+                        <div class="navbar-header ">
+                            <div class="pull-left">
+                                <div class="/*hidden-md-down*/">
+                                    <isinclude url="${URLUtils.url('Account-Header')}" />
+                                    <isinclude url="${URLUtils.url('Page-Locale')}" />
+                                </div>
+                                <button class="navbar-toggler" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                                    &#9776; <span class="hidden-xs-down">Menu</span>
+                                </button>
+                            </div>
+                            <div class="pull-right">
+                                <div class="search hidden-xs-down">
+                                    <isinclude template="components/header/search" />
+                                </div>
+                                <div class="minicart" data-action-url="${URLUtils.url('Cart-MiniCartShow')}">
+                                    <isinclude url="${URLUtils.url('Cart-MiniCart')}" />
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+                </iscomment>
+            </div>
+        </div>
+        <div class="main-menu navbar-toggleable-lg menu-toggleable-left multilevel-dropdown d-none d-md-block" id="sg-navbar-collapse">
+            <div class="container-desktop">
+                <div class="row">
+                    <isinclude url="${URLUtils.url('Page-IncludeHeaderMenuDesktop')}"/>
+                    <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}"/>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile d-sm-none">
+            <isinclude template="components/header/search" />
+        </div>
+    </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg col-12 show-menu-movil-custom bg-white-1">
+    <div class="close-menu clearfix bg-warning">
+        <div class="back pull-left bg-primary">
+            <button role="button" aria-label="${Resource.msg('label.header.menu.back', 'common', null)}">
+                <span class="caret-left"></span>
+                ${Resource.msg('link.header.menu.back', 'common', null)}
+            </button>
+        </div>
+        <div class="close-button pull-right bg-info">
+            <button role="button" aria-label="${Resource.msg('label.header.menu.close', 'common', null)}">
+                ${Resource.msg('link.header.menu.close', 'common', null)}
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+    <div class="menu-group" role="navigation">
+        <ul class="nav navbar-nav" role="menu">
+            <isif condition="${pdict.categories}">
+                <isloop items="${pdict.categories}" var="category">
+                    <isif condition="${category.subCategories}">
+                        <li class="nav-item dropdown" role="presentation">
+                            <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
+                            <isset name="menuItem" value="${category}" scope="page" />
+                            <isinclude template="components/header/menuItem" />
+                        </li>
+                    <iselse/>
+                        <li class="nav-item" role="presentation">
+                            <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="nav-link" role="link" tabindex="0">${category.name}</a>
+                        </li>
+                    </isif>
+                </isloop>
+            </isif>
+            <isinclude url="${URLUtils.url('Account-Header', 'mobile', true)}" />
+            <isinclude url="${URLUtils.url('Page-Locale', 'mobile', true)}" />
+        </ul>
+    </div>
+</nav>

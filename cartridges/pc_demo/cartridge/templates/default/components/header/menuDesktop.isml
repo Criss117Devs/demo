@@ -1,46 +1,52 @@
-<nav class="col-12 desktop-menu navbar no-spacing-mp bg-white hide-menu-desktop-custom">
-    <ul class="desktop-menu-ul container"> <iscomment> the classcontainer center the elements </iscomment>
-        <li class="desktop-menu-ul-li" role="presentation">
-            <a class="logo-menu-width-desktop" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
-                <img class="logo-menu-desktop" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-            </a>
-        </li>
-        <isif condition="${pdict.categories}">
-            <isloop items="${pdict.categories}" var="category">
-                <isif condition="${category.subCategories}">
-                    <li class="desktop-menu-ul-li desktop-menu-ul-li-margen-2"  role="presentation">
-                        <a class="desktop-menu-ul-li-a" href="<isprint value=" ${category.url}"
-                            encoding="htmldoublequote" />" id="${category.id}"
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                        tabindex="0">${category.name}</a>
-
-                        <isset name="menuItem" value="${category}" scope="page" />
-                        <isinclude template="components/header/menuItem" />
-                        
-                    </li>
-                <iselse/>
-                    <li class="desktop-menu-ul-li desktop-menu-ul-li-margen-2" role="presentation">
-                        <a class="desktop-menu-ul-li-a" href="<isprint value=" ${category.url}" encoding="htmldoublequote" />"
-                        id="${category.id}" role="link" tabindex="0">${category.name}</a>
-                    </li>
-                </isif>
-            </isloop>
-        </isif>
-
-        <li class="desktop-menu-ul-li" role="presentation">
-            <isinclude template="components/header/customSearch" />
-        </li>
-        <li class="desktop-menu-ul-li" role="presentation">
-            <a class="a-menu-desktop-block-3-text" href="https://www.freecodecamp.org/">Localiza tu tienda</a>
-        </li>
-        <li class="desktop-menu-ul-li" role="presentation">
-            <img class="icons-menu-desktop-size desktop-menu-ul-li" src="${URLUtils.staticURL('/images/location.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-        </li>
-        <li class="desktop-menu-ul-li" role="presentation">
-            <img class="icons-menu-desktop-size desktop-menu-ul-li" src="${URLUtils.staticURL('/images/user.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-        </li>
-        <div class="minicart" data-action-url="${URLUtils.url('Cart-MiniCartShow')}">
-            <isinclude url="${URLUtils.url('Cart-MiniCart')}" />
+<nav class="navbar navbar-expand-md col-12 no-marginx-no-paddingx nav-height-desktop hide-menu-desktop-custom no-marginy-no-paddingy bg-danger">
+    <iscomment>
+    <div class="close-menu clearfix d-lg-none">
+        <div class="back pull-left">
+            <button role="button" aria-label="${Resource.msg('label.header.menu.back', 'common', null)}">
+                <span class="caret-left"></span>
+                ${Resource.msg('link.header.menu.back', 'common', null)}
+            </button>
         </div>
-    </ul>
+        <div class="close-button pull-right">
+            <button role="button" aria-label="${Resource.msg('label.header.menu.close', 'common', null)}">
+                ${Resource.msg('link.header.menu.close', 'common', null)}
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+    </iscomment>
+    <div class="menu-group menu-items-desktop bg-success" role="navigation">
+        <ul class="nav navbar-nav menu-items-desktop-ul bg-warning" role="menu">
+            <isif condition="${pdict.categories}">
+                <isloop items="${pdict.categories}" var="category">
+                    <isif condition="${category.subCategories}">
+                        <li class="menu-items-desktop-ul-li" role="presentation">
+                            <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="a1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
+                            <isset name="menuItem" value="${category}" scope="page" />
+                            <isinclude template="components/header/menuItem" />
+                        </li>
+                    <iselse/>
+                        <li class="menu-items-desktop-ul-li" role="presentation">
+                            <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="a1" role="link" tabindex="0">${category.name}</a>
+                        </li>
+                    </isif>
+                </isloop>
+            </isif>
+            
+            <a class="logo-home" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
+                <img class="hidden-md-down menu-items-desktop-logo" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+                <img class="d-lg-none" src="${URLUtils.staticURL('/images/logo-small.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+            </a>
+            
+            <div>
+                <isinclude template="components/header/search" />
+            </div>
+            <isinclude url="${URLUtils.url('Account-Header', 'mobile', true)}" />
+            <isinclude url="${URLUtils.url('Page-Locale', 'mobile', true)}" />
+            <div class="minicart" data-action-url="${URLUtils.url('Cart-MiniCartShow')}">
+                <isinclude url="${URLUtils.url('Cart-MiniCart')}" />
+            </div>
+            
+        </ul>
+    </div>
 </nav>

@@ -1,0 +1,15 @@
+    <ul class="l">
+        <isloop items="${menuItem.subCategories}" var="category">
+            <isif condition="${category.subCategories}">
+                <li class=""  role="presentation">
+                    <a class="" href="${category.url}" id="${category.id}"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
+                    <isset name="menuItem" value="${category}" scope="page" />
+                    <isinclude template="components/header/menuItemDos" />
+                </li>
+            <iselse/>
+                <li class=""  role="presentation">
+                    <a class="" href="${category.url}" id="${category.id}" role="menuitem"  tabindex="0">${category.name}</a>
+                </li>
+            </isif>
+        </isloop>
+    </ul>

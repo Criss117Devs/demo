@@ -4,10 +4,8 @@
 
 <isscript>
     assets.addCss('/css/global.css');
-    assets.addCss('/css/skin/skin.css');
     assets.addCss('/css/megaMenu.css');
-    assets.addCss('/css/formSearch.css');
-    assets.addCss('/css/footer.css');
+    /*assets.addCss('/css/footer.css');*/
 </isscript>
 
 <!DOCTYPE html>

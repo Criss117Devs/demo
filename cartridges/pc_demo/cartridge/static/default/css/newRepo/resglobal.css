@@ -83,6 +83,7 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
+/* warning */
 *,
 :after,
 :before {
@@ -632,7 +633,6 @@ pre code {
     margin-right: auto;
     margin-left: auto
 }
-
 @media (min-width:769px) {
     .container {
         max-width: 720px
@@ -2104,7 +2104,7 @@ pre code {
         display: block;
         width: 100%;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch
+        -webkit-overflow-scrolling: touch;
     }
 
     .table-responsive-xl>.table-bordered {
@@ -3624,7 +3624,7 @@ input[type=submit].btn-block {
 }
 
 .dropdown-menu.show {
-    display: block
+    display: inline-block
 }
 
 .dropdown-header {
@@ -16340,7 +16340,7 @@ a.skip:hover {
         left: 0
     }
 }
-
+/*
 @media (max-width:1199.98px) {
     .menu-toggleable-left.navbar-toggleable-lg {
         position: fixed;
@@ -16354,6 +16354,23 @@ a.skip:hover {
 
     .menu-toggleable-left.navbar-toggleable-lg.in {
         min-width: 50%;
+        left: 0
+    }
+}
+*/
+@media (max-width:1200px) {
+    .menu-toggleable-left.navbar-toggleable-lg {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        transition: left .5s cubic-bezier(0, 1, .5, 1);
+        display: block;
+        max-width: 100%
+    }
+
+    .menu-toggleable-left.navbar-toggleable-lg.in {
+        min-width: 99%;
         left: 0
     }
 }
@@ -16410,31 +16427,40 @@ a.skip:hover {
     background-color: #fff;
     color: #444
 }
-/*
-@media (min-width:769px) {
-    .nav-item>.nav-link {
-        color: #fff
-    }
-}
-*/
-/*
-@media (min-width:769px) {
-    .nav-item>.nav-link {
-        color: #000
-    }
-    .nav-item-submenu>.nav-link-submenu {
-        color: #fff
-    }
-}
-*/
 
+@media (min-width:769px) {
+    .nav-item>.nav-link {
+        color: #fff
+    }
+}
+/* 
+start:
+This breakpoint was commented out so that the screen retains its functionality of displaying the menu on
+screens smaller than 1200px
 @media (max-width:768.98px) {
     .main-menu.menu-toggleable-left {
         background-color: #fff;
         z-index: 4
     }
 }
-
+New breakpoint 1200px
+*/
+/* start
+This breakpoint was commented out so that the screen retains its functionality of showing the hide menu button on screens smaller than 1200px
+@media (max-width:700px) {
+    .main-menu.menu-toggleable-left {
+        background-color: #fff;
+        z-index: 4
+    }
+}
+*/
+@media (max-width:1200px) {
+    .main-menu.menu-toggleable-left {
+        background-color: #fff;
+        z-index: 4
+    }
+}
+/* end */
 .menu-toggleable-left .close-menu {
     padding: 15px;
     background-color: #eee;
@@ -16443,7 +16469,7 @@ a.skip:hover {
     flex: 0 0 100%
 }
 
-@media (min-width:769px) {
+@media (min-width:1200px) {
     .menu-toggleable-left .close-menu {
         display: none
     }
@@ -16481,7 +16507,7 @@ a.skip:hover {
 
     .menu-toggleable-left.in .dropdown {
         display: block;
-        position: static
+        position: static;
     }
 
     .menu-toggleable-left.in .dropdown-toggle {
@@ -16976,9 +17002,9 @@ a.normal {
 }
 
 footer {
-    background-color: #0F1A38; /* background-color: #e9ecef; */
+    background-color: #e9ecef;
     padding-top: 1.25em;
-    padding-bottom: 1.25em
+    /* padding-bottom: 1.25em */
 }
 
 footer h2 {
@@ -18858,116 +18884,13 @@ div.availability {
     width: .8em
 }
 
-/*
-boostrap hide end shw 
-*/
-
-.without-mp-style {
-    margin: 0px !important;
-    padding: 0px !important;
-}
-
-@media screen and (max-width) {
-   
- }
-
-.black-text {
-    color: black;
-}
-
-.logo-size-footer {
-    text-align: center;
-    width: 90px;
-    height: 90px;
-}
-
-.logo-size-nav {
-    height: 40px;
-    width: 40px;
-    margin-top: 8px;
-}
-
-.logo-size-nav-1 {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 20px;
-}
-
-.logo-size-nav-menu {
-    width: 18px;
-    height: 18px;
-}
-
-.header-banner-title {
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    color: #000000;
-}
-
-.custom-mt-10 {
-    margin-top: 10px;
-}
-
-.navbar-width-menu {
-    max-height: 60px;
-}
-
-.icon-spacing-nav {
-    margin-right: 15px;
-    margin-left: 15px
-}
-
-.icon-spacing-left-nav {
-    margin-left: 15px
-}
-
-
-.search-custom-nav-1 {
-    position: relative;
-    top: 10px;
-}
-
-.conteiner-main {
-    margin-right: 15px;
-    margin-left: 15px;
-}
-
-.search-label-icon-custom {
-    position: relative;
-}
-  
-.search-label-icon-custom:before {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 0;
-    bottom: 0;
-    width: 20px;
-    background-image: url("../images/searchpng.png");
-    background-position: center;
-    background-repeat: contain;
-    background-repeat: no-repeat;
-}
-  
-.search-input-custom {
-    padding: 10px 10px;
-    height:40px;
-    border: none;
-}
-
-.search-custom-header-border {
-    border: 1px solid black;
-}
-
+/* colors */
 
 .blue-1 {
     background-color: #4AC3FD;
 }
 
-.blue-2 {
+.bg-blue-2 {
     background-color: #0F1A38;
 }
 
@@ -18975,11 +18898,11 @@ boostrap hide end shw
     background-color: #4AC3FD;
 }
 
-.orange-1 {
+.bg-orange-1 {
     background-color: #FF5100
 }
 
-.white-1 {
+.bg-white-1 {
     background-color: #fff
 }
 
@@ -18987,142 +18910,186 @@ boostrap hide end shw
     color: white;
 }
 
-.nav-height-custom {
-    height:60px;
+.black-text {
+    color: black;
 }
 
-.footer-div-mail-custom {
-    height:240px
+.blue-text {
+    color: #2D64FC;
+}
+
+/* icons  */
+.logo-menu-width-desktop {
+    width: 40px;
+    height: 40px
+}
+
+.logo-menu-desktop {
+    width: 40px;
+    height: 40px
+}
+
+.icons-menu-desktop-size {
+    width: 25px;
+    height: 25px;
+}
+
+.container-desktop {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* spacing and margins */
+.no-spacing-mp {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
 
 
 
+.icons-menu-spacing-movil {
+    margin-left:7%;
+    margin-right:7%;
+}
+
+/* */
+
+.header-banner-title {
+    height: 45px;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    padding-top: 8px;
+}
 
 
+/* mega menu *//*
+.menu-desktop:hover {
+    margin-bottom: 200px;
+}
+*/
+ /* text  */
 
-.dropbtn {
-    background-color: #04AA6D;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  .dropdown1 {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: pink;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #000;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-
-
-
-  .navc {
-    text-align:center;
-    width: 100%;
-    background: #bebebe;
-    padding: 0;
-    margin: 0;
-    height: 60px;
-    position:relative;
-  }
-  
-  .navc ul {
-    background: #bebebe;
-    list-style:none;
-    padding:0 20px;
-    margin: 0;
-    height: 60px;
-  
-  }
-  
-  
-  .navc ul li {
-    display: inline-block;
-  }
-  
-  
-  .navc ul li a {
-    color:#333333;
-    display:block;
-    padding:0px 40px;
-    text-decoration:none;
-    float: left;
-    height: 60px;
-     line-height: 60px;
-  }
-  
-  .navc ul li:hover {
-    background: #333333;
-  }
-  
-  
-  .navc ul li:hover > a{
-      color:#FFFFFF;
-  }
-  
-  .navc ul li:hover > ul {
-    display:block;
-  }
-  
-  .navc ul ul {
-    background: #BEBEBE;
-    padding:0;
-    text-align: center;
-    display:none;
-      width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0px;
-  }
-  
 
 /*
+a:hover {
+    background: #efefef;
+}*/
+
+li div {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+}
+
+li:hover div {
+    display: block;
+}
+
+/* mover a clases */
+li div ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+li div ul li ul{
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+}
+
+li div ul li ul li{
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+}
+
+/* */
 
 
-.logo-style {
-    height: 50px;
-    width: 50px;
+li div ul li a {
+    font-size: 1em;
+    color: white;
 }
 
 
-.div-search-orange {
-    width:150px;
+.hide-menu-desktop-custom {
 }
 
-
-
-.custom-height-1 {
-    height:60px;
+.show-menu-movil-custom {
+    height: 60px;
+    width:100%;
 }
 
-.custom-height-2 {
-    height:32px;
+.show-menu-movil-custom-div {
+    height: 60px;
 }
 
-
-
-.nav-link-1 {
+.show-menu-movil-custom-1 {
 }
+
+@media (min-width:1200px) {
+    .show-menu-movil-custom {
+        display: none;
+    }
+    /*.show-menu-movil-custom-1 {
+        display: none;
+    }*/
+    .hide-menu-desktop-custom {
+        display: block;
+    }
+}
+
+@media (max-width:1200px) {
+    .hide-menu-desktop-custom {
+        display: none;
+    }
+    .show-menu-movil-custom {
+        display: block;
+    }
+    /*.show-menu-movil-custom-1 {
+        display: none;
+    }*/
+}
+
+@media (min-width:1200px) and (max-width:1500px) {
+    .desktop-menu-ul-li-margen-2 {
+        margin-right: 30px !important;
+        margin-left: 30px !important;
+    }
+}
+
+@media (min-width:1500px) {
+    .desktop-menu-ul-li-margen-2 {
+        margin-right: 35px !important;
+        margin-left: 35px !important;
+    }
+}
+
+/* Horizontal list */
+
+.list-vertical  {
+    display: inline;
+}
+
+.center-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-1 { /* Elimina el margen por defecto de 15px lr */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+/*
+https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-DemoPuntoCommerse-Site/default/Search-Show?cgid=womens
+https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewLdsBusinessManagerScreen-PageDesigner/#/edit/page/homepage
 */
