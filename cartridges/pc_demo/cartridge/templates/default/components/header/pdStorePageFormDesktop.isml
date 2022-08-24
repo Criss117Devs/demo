@@ -1,13 +1,56 @@
-<nav class="bg-blue-2">
-    <form class="form-inline">
-        <div class="form-group mb-2">
-            <label for="staticEmail2" class="sr-only">Email</label>
-            <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+<div class="form-desktop-inline bg-blue-2">
+    <div class="">
+        <button type="button" class="btn form-desktop-find-by-car"> Busca tu llanta por vehículo </button>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle form-desktop-dropdowns" type="button"
+            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Llantas
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
         </div>
-        <div class="form-group mx-sm-3 mb-2">
-            <label for="inputPassword2" class="sr-only">Password</label>
-            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle form-desktop-dropdowns" type="button"
+            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Servicios
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
         </div>
-        <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
-    </form>
-</nav>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle form-desktop-dropdowns" type="button"
+            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Llantas
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle form-desktop-dropdowns" type="button"
+            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Llantas
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>
+    <div class="search">
+        <isinclude template="components/header/search" />
+    </div>
+    <div class="">
+        <button type="button" class="btn form-desktop-find-by-car"> Busca tu llanta por vehículo </button>
+    </div>
+
+</div>

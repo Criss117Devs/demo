@@ -48,3 +48,17 @@
     font-size: 14px;
     line-height: 22px;
 }
+
+.footer-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.footer-pie {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    color:#fff;
+}

@@ -1,36 +1,35 @@
-<footer class="bg-blue-2" id="footercontent">
-    <div class="footer-container row-1 container">
-        <div class="footer-item col-sm-12 col-md-12 col-lg-2">
+<footer class="bg-blue-2 no-marginy-no-paddingy" id="footercontent">
+    <div class="footer-container row-1" style="padding-top: 100px; padding-left:80px; padding-right:80px">
+        <div class="footer-item col-sm-12 col-md-12 col-lg-2 center-items">
             <iscontentasset aid="footer-terms-and-conditions" />
         </div>
-        <div class="footer-item col-sm-12 col-md-12 col-lg-2">
+        <div class="footer-item col-sm-12 col-md-12 col-lg-2 center-items">
             <iscontentasset aid="footer-website" />
         </div>
-        <div class="footer-item col-sm-12 col-md-12 col-lg-2">
+        <div class="footer-item col-sm-12 col-md-12 col-lg-2 center-items">
             <iscontentasset aid="footer-company-information" />
         </div>
         <div class="footer-item col-sm-12 col-md-12 col-lg-4">
             <iscomment>
                 <iscontentasset aid="footer-credit-card" />
             </iscomment>
-            
-            <div class="row justify-content-md-center">
+            <div class="row">
                 <div class="col-7">
-                    <button type="button" class="footer-button-mail-custom ">Correo electrónico</button>
+                    <input class="footer-button-mail-custom" placeholder="Correo electrónico" type="text" />
                 </div>
                 <div class="col-5">
                     <button type="button" class="footer-button-joinus-custom ">Suscríbete</button>
                 </div>
             </div>
-            <div class="row ustify-content-md-center my-1">
-                <div class="col-4 blaxk-text">
-                    <p class="without-mp-style white-text">Siguenos</p>
+            <div class="row mt-3">
+                <div class="col-4 black-text">
+                    <p class="white-text no-marginy-no-paddingy">Siguenos</p>
                 </div>
-                <div class="col-8 blaxk-text">
-                    <p class="without-mp-style white-text">Pagos Seguros</p>
+                <div class="col-8 black-text -marginy-no-paddingy">
+                    <p class="white-text no-marginy-no-paddingy">Pagos Seguros</p>
                 </div>
             </div>
-            <div class="row justify-content-md-center">
+            <div class="row">
                 <div class="col-4">
                     <div class="btn-group" role="group" aria-label="Basic example">
                         <div class="minicart-total hide-link-med">
@@ -101,14 +100,14 @@
         </div>
         <div class="col-sm-12 col-md-12 col-lg-2 center-items">
             <a href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
-                <img class="footer-logo-a" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+                <img class="footer-logo" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
             </a>
         </div>
     </div>
     <iscomment>
     <hr class="hidden-xs-down" />
     </iscomment>
-    <div class="row-1 mb-0">
+    <div class="row-1 bg-light">
     <iscomment>
         <div class="col-lg-4 col-sm-5 push-sm-7 push-lg-8 social">
             <isslot id="footer-column-m" description="Content in column 1 of the Footer" context="global" />
@@ -120,9 +119,9 @@
             </button>
         </div>
     </iscomment>    
-        <div class="col-12 copyright-notice " >
+        <div class="col-12 copyright-notice bg-black-1 text-center no-marginy-no-paddingy" >
             <iscomment><iscontentasset aid="footer-copy" /></iscomment>
-            (C) 2022 Cormag Llantas / Quickfit. Todos los derechos reservados. Hecho con amor de Punto Commerce
+            <p class="footer-pie">(C) 2022 Cormag Llantas / Quickfit. Todos los derechos reservados. Hecho con amor de Punto Commerce</p>
         </div>
     </div>
     
