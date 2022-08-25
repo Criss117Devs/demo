@@ -1,6 +1,6 @@
 <isif condition="${pdict.name === null}">
     <li class="nav-item " role="menuitem"><iscomment>d-lg-none</iscomment>
-        <a  class="nav-link" href="${URLUtils.https('Login-Show')}" >
+        <a  class="nav-link black-text" href="${URLUtils.https('Login-Show')}" >
             <iscomment> <i class="fa fa-sign-in" aria-hidden="true"></i> </iscomment>
             <img alt="" src="${URLUtils.staticURL('/images/user.svg')}" />
             <iscomment><span class="user-message">${Resource.msg('link.header.login', 'account', null)}</span></iscomment>
@@ -9,8 +9,8 @@
 <iselse/>
     <li class="nav-item dropdown" role="menuitem"><iscomment>d-lg-none</iscomment>
         <span class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
-            <i class="fa fa-sign-in" aria-hidden="true"></i>
-            <span class="user-message">${pdict.name}</span>
+            <i class="fa fa-sign-in black-text" aria-hidden="true"></i>
+            <span class="user-message black-text">${pdict.name}</span>
         </span>
         <ul class="dropdown-menu" role="menu" aria-hidden="true">
             <li class="dropdown-item" role="menuitem">

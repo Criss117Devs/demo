@@ -4,38 +4,3 @@
     align-items: center;
     width:100%;
 }
-
-.form-desktop-find-by-car {
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.form-desktop-find-wire-by-zise {
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-}
-
-.form-desktop-dropdowns {
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-    color: #000000;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #fff;
-}
- 

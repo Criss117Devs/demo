@@ -42,14 +42,12 @@
         </div>
         <div class="main-menu navbar-toggleable-sm menu-toggleable-left multilevel-dropdown d-none d-md-block" id="sg-navbar-collapse">
             <iscomment> <div class="container">  </div> </iscomment>
-            <div class="row-1">
+            <div class="row-1 no-marginx-no-paddingx">
                 <div class="col-12 bg-blue-1 text-center banner-height">
                     <p class="header-banner-title ">ENVÍO GRATIS A PARTIR DE $1000</p>
                 </div>
                 <isinclude url="${URLUtils.url('Page-IncludeHeaderMenuDesktop')}"/>
                 <isinclude url="${URLUtils.url('Page-IncludeHeaderMenu')}"/>
-                <isinclude template="components/header/pdStorePageFormDesktop" />
-               
             </div>
         </div>
        

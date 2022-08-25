@@ -1,0 +1,98 @@
+.form-group.required .form-control-label:before {
+    content: "*";
+    color: #c00
+}
+
+.login-page {
+    margin-top: 1em
+}
+
+.login-page .login-form-nav {
+    margin-bottom: 1.25em
+}
+
+.login-page .login-form-nav .tab-pane {
+    margin-top: 1em
+}
+
+.login-page .login {
+    margin-bottom: .938em
+}
+
+.login-page .login .error-message-form {
+    padding: .625em;
+    background-color: #c00;
+    color: #fff;
+    border-radius: .188em
+}
+
+.registration-page .privacy-policy {
+    margin-top: 1rem
+}
+
+.login-banner {
+    background-image: url("../images/account.jpg");
+    background-position-y: 40%
+}
+
+.equal-height .card {
+    width: 100%
+}
+
+.track-order-header {
+    font-size: 1.75rem
+}
+
+.request-password-title {
+    font-size: 1.5rem
+}
+
+/* new styles 08/24/22 */
+
+.main-title-container {
+    height:96px;
+}
+
+.main-title-container-title {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 55px;
+    color: #000000;
+    text-align: center;
+}
+
+.main-title-container-a-nav-tabs-a {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.btn-custom {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    /*text-align: left;*/
+    /*vertical-align: middle;*/
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .1875rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.paddding-left-text {
+    padding-right:35%
+}
+
+.paddding-left-text-1 {
+    padding-right:33%
+}

@@ -17882,11 +17882,12 @@ div.availability {
         color: #333
     }
 }
-
+/*
 .container .breadcrumb {
     border-radius: 0;
     border-bottom: 1px solid #ccc
 }
+*/
 
 .veil {
     z-index: 100;
@@ -18648,7 +18649,7 @@ div.availability {
 
 @media (min-width:1200px) {
     .site-search {
-        width: 15em
+        width: 280px;
         /*  width: 15em 8/23/22*/
     }
 }
@@ -18858,8 +18859,12 @@ div.availability {
     background-color: #0F1A38;
 }
 
-.blue-3 {
+.bg-blue-3 {
     background-color: #4AC3FD;
+}
+
+.bg-blue-4 {
+    background-color: #2D64FC;
 }
 
 .bg-orange-1 {
@@ -18870,16 +18875,20 @@ div.availability {
     background-color: #fff
 }
 
-.bg-black-1 {
-    background-color: black;
+.bg-white-2 {
+    background-color: #E7E7E7;
 }
 
-.white-text {
-    color: white;
+.bg-black-1 {
+    background-color: black !important;
+}
+
+.white-text{
+    color: white !important;
 }
 
 .black-text {
-    color: black;
+    color: black  !important;
 }
 
 .blue-text {
@@ -18891,20 +18900,6 @@ div.availability {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-}
-
-.no-marginx-no-paddingx {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-.no-marginy-no-paddingy {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
 }
 
 .header-banner-title {
@@ -18928,8 +18923,66 @@ div.availability {
 }
 
 .full-width {
-    width: 100%;
+    width: 100% !important;
 }
+
+
+/* margins and paddings */
+.no-marginx-no-paddingx {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.no-marginy-no-paddingy {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.px-100 {
+    margin-left: 100px;
+    margin-right: 100;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pl-40 {
+    padding-left: 40px;
+}
+
+.pl-112 {
+    padding-left: 112px;
+}
+
+.pr-14 {
+    padding-right: 14px;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.pr-40 {
+    padding-right: 40px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-32 {
+    margin-right: 32px;
+}
+
 
 /*
 https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-DemoPuntoCommerse-Site/default/Search-Show?cgid=womens

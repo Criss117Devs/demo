@@ -6,7 +6,6 @@
     assets.addCss('/css/global.css');
     assets.addCss('/css/megaMenu.css');
     assets.addCss('/css/footer.css');
-    assets.addCss('/css/pdStorePageFormDesktop.css');
 </isscript>
 
 <!DOCTYPE html>
