@@ -1,6 +1,6 @@
-<div class="row hidden-xs-down">
-    <div class="col" role="navigation" aria-label="Breadcrumb">
-        <ol class="breadcrumb">
+<div class="row hidden-xs-down breadcrumb-start mt-0 mb-0 ml-0 mr-0">
+    <div class="col l-0 pl-0" role="navigation" aria-label="Breadcrumb">
+        <ol class="breadcrumb ml-0 pl-0">
             <isloop items="${pdict.breadcrumbs}" var="breadcrumbValue" status="loopState">
                 <li class="breadcrumb-item">
                     <isif condition="${loopState.last}">

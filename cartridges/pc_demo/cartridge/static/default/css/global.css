@@ -10983,10 +10983,11 @@ a.text-dark:hover {
 .carousel .carousel-control-prev:focus {
     outline: auto #000
 }
-
+/*
 .nav-tabs {
     border-bottom: 1px solid #ccc
 }
+*/
 
 .nav-tabs .nav-link {
     font-size: 1.1rem;
@@ -18883,6 +18884,10 @@ div.availability {
     background-color: black !important;
 }
 
+.bg-grey-1 {
+    background-color: #E7E7E7;
+}
+
 .white-text{
     color: white !important;
 }
@@ -18942,6 +18947,11 @@ div.availability {
     padding-bottom: 0 !important;
 }
 
+.no-marginx {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 .px-100 {
     margin-left: 100px;
     margin-right: 100;
@@ -18951,12 +18961,33 @@ div.availability {
     padding-left: 20px;
 }
 
+
 .pl-40 {
     padding-left: 40px;
 }
 
 .pl-112 {
     padding-left: 112px;
+}
+
+.pb-28 {
+    padding-bottom: 28px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-18 {
+    padding-top: 18px;
+}
+
+.pt-26 {
+    padding-top: 26px;
+}
+
+.pt-28 {
+    padding-top: 28px;
 }
 
 .pr-14 {

@@ -49,18 +49,18 @@
 
 /* new styles 08/24/22 */
 
-.main-title-container {
+.main-title-height {
     height:96px;
 }
 
-.main-title-container-title {
+.main-title {
     font-family: 'Saira';
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 55px;
     color: #000000;
-    text-align: center;
+
 }
 
 .main-title-container-a-nav-tabs-a {
@@ -96,3 +96,58 @@
 .paddding-left-text-1 {
     padding-right:33%
 }
+
+.breadcrumb-start {
+    padding-top: 75px;
+    padding-bottom: 30px;
+}
+
+.nav-paddding {
+    padding-left: 50px !important; 
+    padding-right: 50px !important;
+}
+
+.nav-fill .nav-item-left {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: left
+}
+
+.nav-fill .nav-item-right {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: right
+}
+
+
+
+.nav-link-login-a {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000 !important;
+}
+
+/*
+.navTabs-paddings {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.card-body-login-nav-tabs-padding { 
+    
+    background-color: #E7E7E7;
+}
+
+.card-body-login-items-padding { 
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.card-body-login-buttons-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+*/

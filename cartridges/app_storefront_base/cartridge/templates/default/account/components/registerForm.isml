@@ -1,6 +1,6 @@
 <form
     action="${pdict.createAccountUrl}"
-    class="registration"
+    class="registration nav-paddding"
     method="POST"
     name="${pdict.profileForm.htmlName}">
     <div class="form-group

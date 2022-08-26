@@ -9,7 +9,8 @@
 <iselse/>
     <li class="nav-item dropdown" role="menuitem"><iscomment>d-lg-none</iscomment>
         <span class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
-            <i class="fa fa-sign-in black-text" aria-hidden="true"></i>
+            <iscomment> <i class="fa fa-sign-in black-text" aria-hidden="true"></i></iscomment> 
+            <img alt="" src="${URLUtils.staticURL('/images/user.svg')}" />
             <span class="user-message black-text">${pdict.name}</span>
         </span>
         <ul class="dropdown-menu" role="menu" aria-hidden="true">

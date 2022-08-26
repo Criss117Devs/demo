@@ -4,24 +4,25 @@
         assets.addCss('/css/login.css');
         assets.addJs('/js/login.js');
     </isscript>
+
     <iscomment>
     <div class="hero slant-down login-banner">
-        <h1 class="page-title">${Resource.msg('header.hero.image.login', 'login', null)}</h1>
+        <h1 class="page-title">${Resource.msg('header.hero.image.login', 'login', null)}</h1>´
     </div>
-    </iscomment>
-    <div class="row-1 bg-white-2 main-title-container d-flex align-items-center">
-        <div class="col-12">
-            <p class="main-title-container-title">Inicia sesión</p>
+     </iscomment>
+    <div class="row main-title-height bg-grey-1">
+        <div class="col-12 text-center">
+            <p class="main-title pt-18">Inicia sesión</p>
         </div>
-    </div>
+    </div> 
     <div class="container login-page">
         <!---Breadcrumbs--->
         <isinclude template="components/breadcrumbs/pageBreadcrumbs"/>
         <div class="row justify-content-center equal-height">
             <div class="col-sm-8 col-md-6">
                 <div class="card">
-                    <div class="card-body">
-                        <div class="login-form-nav">
+                    <div class="card-body no-marginx-no-paddingx no-marginy-no-paddingy">
+                        <div class="login-form-nav ">
                             <isinclude template="account/components/navTabs" />
                             <div class="tab-content">
                                 <div class="tab-pane ${pdict.navTabValue === 'login' ? 'active' : ''}" id="login" role="tabpanel" aria-labelledby="login-tab">
