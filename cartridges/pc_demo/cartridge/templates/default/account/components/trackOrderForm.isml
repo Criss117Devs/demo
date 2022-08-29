@@ -1,6 +1,6 @@
 <form action="${URLUtils.url('Order-Track')}" class="trackorder" method="POST" name="trackorder-form">
-    <h2 class="card-header track-order-header">${Resource.msg('header.form.trackorder', 'login', null)}</h2>
-    <div class="card-body">
+    <h2 class="card-header-custom track-order-header pl-40 pr-40 bg-grey-1 nav-tabs-height track-order-form-padding">${Resource.msg('header.form.trackorder', 'login', null)}</h2>
+    <div class="card-body-custom bg-white-1 ml-0 mr-0 pl-40 pr-40">
         <isif condition="${pdict.orderTrackFormError}">
             <div class="form-group">
                 <div class="alert alert-danger " role="alert">
@@ -8,9 +8,9 @@
                 </div>
             </div>
         </isif>
-        <p class="track-order-header-text">${Resource.msg('header.form.trackorder.text', 'login', null)}</p>
+        <p class="track-order-header-text pt-28 pb-28 mb-0">${Resource.msg('header.form.trackorder.text', 'login', null)}</p>
 
-        <div class="form-group required">
+        <div class="form-group required mb-0">
             <label class="form-control-label" for="trackorder-form-number">
                 ${Resource.msg('label.input.trackorder.ordernumber', 'login', null)}
             </label>
@@ -24,7 +24,7 @@
             <div class="invalid-feedback" id="form-number-error"></div>
         </div>
 
-        <div class="form-group required">
+        <div class="form-group required mb-0 pt-24">
             <label class="form-control-label" for="trackorder-form-email">
                 ${Resource.msg('label.input.trackorder.orderemail', 'login', null)}
             </label>
@@ -44,8 +44,8 @@
 
         <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}"/>
 
-        <div class="form-group">
-            <button class="btn btn-block btn-primary" type="submit" name="submit" value="submit">
+        <div class="form-group pt-24">
+            <button class="btn btn-block bg-primary" type="submit" name="submit" value="submit">
                 ${Resource.msg('button.text.trackorderform', 'login', null)}
             </button>
         </div>

@@ -1,21 +1,24 @@
+.footer-container-paddings {
+    padding-top: 65px;
+    padding-right: 48px;
+    padding-left: 80px;
+}
+
 .footer-button-mail-custom {
-    width: 216px;
-    height: 30px;
+    width: 100%;
     font-family: 'Saira';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     text-align: center;
-    color: #FFFFFF;
     background-color: #0F1A38;
-    border: 1px solid white;
-    padding-bottom: 2px;
+    border: 1px solid white !important;
+    height: 100%;
 }
 
 .footer-button-joinus-custom {
-    width: 145px;
-    height: 30px;
+    width: 100%;
     font-family: 'Saira';
     font-style: normal;
     font-weight: 400;
@@ -23,9 +26,7 @@
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;
-    border: 1px solid #FF5100;
     background: #FF5100;
-    padding-bottom: 2px;
 }
 
 .footer-title-list {

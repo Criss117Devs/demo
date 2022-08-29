@@ -13,7 +13,7 @@
         <h1 class="page-title">${Resource.msg('page.heading.dashboard','account',null)}</h1>
     </div>
 
-    <div class="container bg-info">
+    <div class="container">
         <!---Breadcrumbs--->
         <isinclude template="components/breadcrumbs/pageBreadcrumbs"/>
         <isinclude template="account/dashboardProfileCards"/>

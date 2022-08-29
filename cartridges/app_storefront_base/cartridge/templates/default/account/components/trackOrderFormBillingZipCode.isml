@@ -1,4 +1,4 @@
-<div class="form-group required">
+<div class="form-group required mb-0 pt-24">
     <label class="form-control-label" for="trackorder-form-zip">
         ${Resource.msg('label.input.trackorder.postalcode', 'login', null)}
     </label>

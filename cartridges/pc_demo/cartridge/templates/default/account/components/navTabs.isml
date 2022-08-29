@@ -1,21 +1,21 @@
-<ul class="nav nav-tabs nav-fill nav-paddding bg-grey-1" role="tablist">
-    <li class="nav-item-left" role="presentation">
+<ul class="nav nav-tabs nav-fill bg-grey-1 nav-tabs-height" role="tablist">
+    <li class="nav-item-left  pt-10 pb-10 pl-40" role="presentation">
         <a
             <isif condition="${pdict.navTabValue === 'login'}">
-                class="nav-link pl-0 active nav-link-login-a"
+                class="nav-link-custom active"
             <iselse>
-                class="nav-link pl-0"
+                class="nav-link-custom"
             </isif>
             href="#login" data-toggle="tab" role="tab" aria-controls="login" aria-selected="true" id="login-tab">
             ${Resource.msg('link.header.login.module', 'login', null)}
          </a>
     </li>
-    <li class="nav-item-right" role="presentation">
+    <li class="nav-item-right pt-10 pb-10 pr-40" role="presentation">
         <a
             <isif condition="${pdict.navTabValue === 'register'}">
-                class="nav-link pr-0 active nav-link-login-a"
+                class="nav-link-custom active"
             <iselse>
-                class="nav-link pr-0 nav-link-login-a"
+                class="nav-link-custom"
             </isif>
             href="#register" data-toggle="tab" role="tab" aria-controls="register" aria-selected="false" id="register-tab">
             ${Resource.msg('link.header.register.module', 'login', null)}

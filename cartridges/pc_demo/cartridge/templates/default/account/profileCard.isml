@@ -1,11 +1,14 @@
 <div class="card">
-    <div class="card-header clearfix">
+    <div class="card-header clearfix bg-grey-1 pl-40 pr-40">
         <h2 class="pull-left profile-header">${Resource.msg('label.profile','account',null)}</h2>
         <isif condition="${!pdict.account.isExternallyAuthenticated}">
-            <a href="${URLUtils.url('Account-EditProfile')}" class="pull-right" aria-label="${Resource.msg('label.profile.edit','account',null)}">${Resource.msg('link.edit','account',null)}</a>
+            <iscomment><a href="${URLUtils.url('Account-EditProfile')}" class="pull-right" aria-label="${Resource.msg('label.profile.edit','account',null)}">${Resource.msg('link.edit','account',null)}</a></iscomment>
+            <a  href="${URLUtils.url('Account-EditProfile')}" class="pull-right" aria-label="${Resource.msg('label.profile.edit','account',null)}"><iscomment>${Resource.msg('link.edit','account',null)}</iscomment>
+                <img class="hidden-md-down" src="${URLUtils.staticURL('/images/edit.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+            </a>
         </isif>
     </div>
-    <div class="card-body">
+    <div class="card-body pl-40 pr-40">
         <dl>
             <dt>${Resource.msg('label.profile.firstname','account',null)}</dt>
             <dd>${pdict.account.profile.firstName}</dd>

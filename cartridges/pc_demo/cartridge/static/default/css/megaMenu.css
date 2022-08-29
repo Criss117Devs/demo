@@ -9,9 +9,13 @@
     height: 60px;
 }
 
-.menu-items-desktop-ul {
+.menu-items-desktop ul {
     list-style: none;
 }
+/*
+.menu-items-desktop-ul {
+    
+}*/
 
 .menu-items-desktop-ul-li {
     display: inline-block; 

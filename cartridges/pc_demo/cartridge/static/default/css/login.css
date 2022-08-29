@@ -10,11 +10,11 @@
 .login-page .login-form-nav {
     margin-bottom: 1.25em
 }
-
+/*
 .login-page .login-form-nav .tab-pane {
     margin-top: 1em
 }
-
+*/
 .login-page .login {
     margin-bottom: .938em
 }
@@ -102,11 +102,12 @@
     padding-bottom: 30px;
 }
 
+/* form */
 .nav-paddding {
     padding-left: 50px !important; 
     padding-right: 50px !important;
 }
-
+ /* ul */
 .nav-fill .nav-item-left {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -119,9 +120,9 @@
     text-align: right
 }
 
-
-
-.nav-link-login-a {
+.nav-link-custom {
+    /*display: block;*/
+    width: fit-content;
     font-family: 'Saira';
     font-style: normal;
     font-weight: 700;
@@ -130,24 +131,46 @@
     color: #000000 !important;
 }
 
+ /* sizes */
+ .nav-tabs-height {
+    height:50px
+ }
+
+
+/* icons */
 /*
-.navTabs-paddings {
+.btn-google-icons {
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 10px;
+}*/
+
+/* create account */
+.card-header-custom {
+    /*padding: .75rem 1.25rem;*/
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .125)
+}
+
+.card-body-custom {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    /*padding: 1.25rem*/
+}
+
+/* track order form */
+
+.track-order-form-padding {
+    padding-left: 18px;
     padding-top: 11px;
     padding-bottom: 11px;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: bold;
 }
-
-.card-body-login-nav-tabs-padding { 
-    
-    background-color: #E7E7E7;
-}
-
-.card-body-login-items-padding { 
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.card-body-login-buttons-padding {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-*/

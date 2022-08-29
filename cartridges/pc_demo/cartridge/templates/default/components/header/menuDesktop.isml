@@ -1,7 +1,7 @@
 <nav class="col-12 hide-menu-desktop-custom navbar navbar-expand-md no-marginy-no-paddingy nav-height-desktop bg-white-1 ">
 
     <div class="menu-group menu-items-desktop" role="navigation">
-        <ul class="nav navbar-nav menu-items-desktop-ul nav-height-deskto" role="menu">
+        <ul class="nav navbar-nav menu-items-desktop-ul nav-height-deskto justify-content-center" role="menu">
             <li class="center-items nav-height-desktop pl-custom pr-custom" role="presentation">
                 <a class="nav-height-deskto" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
                     <img class="menu-items-desktop-logo-size" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
@@ -49,24 +49,8 @@
 <iscomment> Sub-menu </iscomment>
 
 <nav class="col-12 hide-menu-desktop-custom navbar navbar-expand-md nav-height-desktop bg-blue-2">
-    <iscomment>
-    <div class="close-menu clearfix d-lg-none">
-        <div class="back pull-left">
-            <button role="button" aria-label="${Resource.msg('label.header.menu.back', 'common', null)}">
-                <span class="caret-left"></span>
-                ${Resource.msg('link.header.menu.back', 'common', null)}
-            </button>
-        </div>
-        <div class="close-button pull-right">
-            <button role="button" aria-label="${Resource.msg('label.header.menu.close', 'common', null)}">
-                ${Resource.msg('link.header.menu.close', 'common', null)}
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-    </div>
-    </iscomment>
     <div class="menu-group" role="navigation">
-        <ul class="nav navbar-nav" role="menu">
+        <ul class="nav navbar-nav justify-content-center" role="menu">
             <li class="center-items ">
                 <button type="button" class="btn form-desktop-find-wire-by-zise"> Busca tu llanta por medida </button>
             </li>
@@ -79,11 +63,6 @@
                             <isinclude template="components/header/menuItemSubmenu" />
                         </li>
                     <iselse/>
-                        <iscomment>
-                        <li class="nav-item" role="presentation">
-                            <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="nav-link" role="link" tabindex="0">${category.name}</a>
-                        </li>
-                        </iscomment>
                     </isif>
                 </isloop>
             </isif>
