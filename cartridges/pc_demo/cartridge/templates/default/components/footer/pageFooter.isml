@@ -1,4 +1,4 @@
-<footer class="bg-blue-2 no-marginy-no-paddingy" id="footercontent">
+<footer class="bg-blue-2 mt-5" id="footercontent">
     <div class="footer-container row-1 footer-container-paddings">
         <div class="footer-item col-sm-12 col-md-12 col-lg-2">
             <iscontentasset aid="footer-terms-and-conditions" />

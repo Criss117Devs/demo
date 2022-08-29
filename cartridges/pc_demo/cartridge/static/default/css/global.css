@@ -19079,6 +19079,15 @@ div.availability {
     transform: translate(-50%, -50%);
 }
 
+.main-title {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 55px;
+    color: #000000;
+}
+
 /*
 https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-DemoPuntoCommerse-Site/default/Search-Show?cgid=womens
 https://bjqc-004.sandbox.us01.dx.commercecloud.salesforce.com/on/demandware.store/Sites-Site/default/ViewLdsBusinessManagerScreen-PageDesigner/#/edit/page/homepage

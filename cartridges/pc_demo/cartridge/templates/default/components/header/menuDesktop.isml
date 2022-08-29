@@ -1,8 +1,7 @@
-<nav class="col-12 hide-menu-desktop-custom navbar navbar-expand-md no-marginy-no-paddingy nav-height-desktop bg-white-1 ">
-
+<nav class="col-12 hide-menu-desktop-custom navbar navbar-expand-md no-marginy-no-paddingy no-marginx-no-paddingx nav-height-desktop bg-white-1 ">
     <div class="menu-group menu-items-desktop" role="navigation">
-        <ul class="nav navbar-nav menu-items-desktop-ul nav-height-deskto justify-content-center" role="menu">
-            <li class="center-items nav-height-desktop pl-custom pr-custom" role="presentation">
+        <ul class="nav navbar-nav nav-height-deskto justify-content-center " role="menu">
+            <li class="center-items nav-height-desktop" role="presentation">
                 <a class="nav-height-deskto" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
                     <img class="menu-items-desktop-logo-size" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
                 </a>
@@ -77,14 +76,6 @@
                     <i class="fa fa-car pl-2" aria-hidden="true"></i>
                 </button>
             </li>
-            <iscomment>
-            <a class="logo-home" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
-                <img class="hidden-md-down" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-                <img class="d-lg-none" src="${URLUtils.staticURL('/images/logo-small.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-            </a>
-            <isinclude url="${URLUtils.url('Account-Header', 'mobile', true)}" />
-            <isinclude url="${URLUtils.url('Page-Locale', 'mobile', true)}" />
-            </iscomment>
         </ul>
     </div>
 </nav>
