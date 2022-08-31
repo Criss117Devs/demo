@@ -10,12 +10,13 @@
         <h1 class="page-title">${Resource.msg('header.hero.image.login', 'login', null)}</h1>´
     </div>
      </iscomment>
-    <div class="row main-title-height bg-grey-1 no-marginx-no-paddingx">
-        <div class="col-12 text-center">
-            <p class="main-title pt-18">Inicia sesión</p>
-        </div>
-    </div> 
-    <div class="container login-page mb-0">
+    <div class="banner-info">
+        <p class="center-element">
+            ${Resource.msg('banner.reset.login','login',null)}
+        </p>
+    </div>
+
+    <div class="container login-page mt-5">
         <!---Breadcrumbs--->
         <isinclude template="components/breadcrumbs/pageBreadcrumbs"/>
         <div class="row justify-content-center equal-height">
@@ -38,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-8 col-md-6">
+            <div class="col-sm-8 col-md-6 div-trackOrderForm">
                 <div class="card">
                     <isinclude template="account/components/trackOrderForm" />
                 </div>

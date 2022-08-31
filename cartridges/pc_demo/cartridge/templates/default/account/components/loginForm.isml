@@ -1,6 +1,6 @@
 <form action="${pdict.actionUrl}" class="login mb-0" method="POST" name="login-form">
     <div class="form-group required pt-18 pb-26 pl-40 pr-40 mb-0">
-        <label class="form-control-label" for="login-form-email">
+        <label class="form-control-label label-custom" for="login-form-email">
             ${Resource.msg('label.input.login.email', 'login', null)}
         </label>
         <input type="email" id="login-form-email" required aria-required="true" class="form-control required" aria-describedby="form-email-error" name="loginEmail" value="${pdict.userName}">
@@ -8,7 +8,7 @@
     </div>
 
     <div class="form-group required pl-40 pr-40 pb-35 mb-0">
-        <label class="form-control-label" for="login-form-password">
+        <label class="form-control-label label-custom" for="login-form-password">
                 ${Resource.msg('label.input.login.password', 'login', null)}
         </label>
         <input type="password" id="login-form-password" required aria-required="true" class="form-control required" aria-describedby="form-password-error" name="loginPassword">
@@ -45,6 +45,6 @@
     <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}"/>
     <div class="pr-40 pl-40">
         <iscomment> added div to wrap button</iscomment>
-        <button type="submit" class="btn btn-block bg-primary">${Resource.msg('button.text.loginform', 'login', null)}</button>
+        <button type="submit" class="btn btn-block bg-blue-4 white-text">${Resource.msg('button.text.loginform', 'login', null)}</button>
     </div>
 </form>

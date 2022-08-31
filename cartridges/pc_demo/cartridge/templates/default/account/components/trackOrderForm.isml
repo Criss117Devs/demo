@@ -11,7 +11,7 @@
         <p class="track-order-header-text pt-28 pb-28 mb-0">${Resource.msg('header.form.trackorder.text', 'login', null)}</p>
 
         <div class="form-group required mb-0">
-            <label class="form-control-label" for="trackorder-form-number">
+            <label class="form-control-label label-custom" for="trackorder-form-number">
                 ${Resource.msg('label.input.trackorder.ordernumber', 'login', null)}
             </label>
             <input
@@ -25,7 +25,7 @@
         </div>
 
         <div class="form-group required mb-0 pt-24">
-            <label class="form-control-label" for="trackorder-form-email">
+            <label class="form-control-label label-custom" for="trackorder-form-email">
                 ${Resource.msg('label.input.trackorder.orderemail', 'login', null)}
             </label>
             <input
@@ -45,7 +45,7 @@
         <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}"/>
 
         <div class="form-group pt-24">
-            <button class="btn btn-block bg-primary" type="submit" name="submit" value="submit">
+            <button class="btn btn-block bg-blue-4 white-text" type="submit" name="submit" value="submit">
                 ${Resource.msg('button.text.trackorderform', 'login', null)}
             </button>
         </div>

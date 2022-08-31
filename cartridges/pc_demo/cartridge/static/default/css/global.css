@@ -18,6 +18,9 @@
     --color-grey6: #444;
     --color-grey7: #222;
     --color-grey8: #333;
+    /* add new colors 08/30/2022 */
+    --color-grey9: #E7E7E7;
+    /**/
     --color-grey-transparent-1: rgba(0, 0, 0, .65);
     --color-grey-transparent-2: rgba(0, 0, 0, .25);
     --color-light-gray: var(--color-grey1);
@@ -6216,7 +6219,9 @@ a.close.disabled {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 1rem;
-    border-bottom: 1px solid #dee2e6;
+    /*  8/30/22
+        border-bottom: 1px solid #dee2e6;
+    */
     border-top-left-radius: .1875rem;
     border-top-right-radius: .1875rem
 }
@@ -11006,7 +11011,14 @@ a.text-dark:hover {
 }
 
 .card-header h4 {
-    margin-bottom: 0
+    margin-bottom: 0;
+    /* add more style 08/30/202 */
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-black);
 }
 
 .modal .modal-body {
@@ -19056,17 +19068,37 @@ div.availability {
     margin-top: 16px;
 }
 
+/* banner text */
+
+.banner-info {
+    position: relative;
+    height: 100px;
+    background-color: var(--color-grey9);
+}
+
+.banner-info p {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 55px;
+}
+
+
+
 /* postiions */
 
 .position-relative {
     position: relative;
 }
 
+/*
 .position-absolute {
     position: absolute;
-}
+}*/
 
 .center-left-element {
+    position: absolute;
     left: 0;
     top: 50%;
     transform: translate(0, -50%);
@@ -19074,6 +19106,7 @@ div.availability {
 }
 
 .center-element {
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -19086,6 +19119,34 @@ div.availability {
     font-size: 35px;
     line-height: 55px;
     color: #000000;
+}
+
+/* reset password */
+.label-custom {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--color-black);
+} 
+
+/* account */
+.profile-header {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-black)
+}
+
+/* responsive screams */
+
+@media (max-width:768px) {
+    .div-trackOrderForm {
+        margin-top: 30px;
+    }
 }
 
 /*

@@ -10,15 +10,15 @@
     </div>
     <div class="card-body pl-40 pr-40">
         <dl>
-            <dt>${Resource.msg('label.profile.firstname','account',null)}</dt>
+            <dt class="label-custom">${Resource.msg('label.profile.firstname','account',null)}</dt>
             <dd>${pdict.account.profile.firstName}</dd>
         </dl>
         <dl>
-            <dt>${Resource.msg('label.profile.lastname','account',null)}</dt>
+            <dt class="label-custom">${Resource.msg('label.profile.lastname','account',null)}</dt>
             <dd>${pdict.account.profile.lastName}</dd>
         </dl>
         <dl>
-            <dt>${Resource.msg('label.profile.email','account',null)}</dt>
+            <dt class="label-custom">${Resource.msg('label.profile.email','account',null)}</dt>
             <dd>${pdict.account.profile.email}</dd>
         </dl>
         <isif condition="${!pdict.account.isExternallyAuthenticated}">
