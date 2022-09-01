@@ -1,5 +1,5 @@
 <div class="menu-items-desktop-ul-li-div bg-white-1">
-    <ul class="menu-items-desktop-ul" role="menu" aria-hidden="true" aria-label="${category.id}">
+    <ul role="menu" aria-hidden="true" aria-label="${category.id}">
         <isloop items="${menuItem.subCategories}" var="category">
             <isif condition="${category.subCategories}">
                 <li class="menu-items-desktop-ul-li" role="presentation">

@@ -8,10 +8,10 @@
     </li>
 <iselse/>
     <li class="nav-item dropdown" role="menuitem"><iscomment>d-lg-none</iscomment>
-        <span class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+        <span class="nav-link dropdown-toggle " role="button" data-toggle="dropdown">
             <iscomment> <i class="fa fa-sign-in black-text" aria-hidden="true"></i></iscomment> 
-            <img alt="" src="${URLUtils.staticURL('/images/user.svg')}" />
-            <span class="user-message black-text">${pdict.name}</span>
+            <img class="pr-14" alt="" src="${URLUtils.staticURL('/images/user.svg')}" />
+            <span class="user-message user-name" >${pdict.name}</span>
         </span>
         <ul class="dropdown-menu" role="menu" aria-hidden="true">
             <li class="dropdown-item" role="menuitem">

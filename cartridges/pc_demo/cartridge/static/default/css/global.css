@@ -16432,8 +16432,15 @@ a.skip:hover {
         color: #fff
     }
 }
-
-@media (max-width:768.98px) {
+/*
+@media (min-width:768.98px) {
+    .main-menu.menu-toggleable-left {
+        background-color: #fff;
+        z-index: 4
+    }
+}
+*/
+@media (min-width:400px) and (max-width: 1200px) {
     .main-menu.menu-toggleable-left {
         background-color: #fff;
         z-index: 4
@@ -16448,7 +16455,8 @@ a.skip:hover {
     flex: 0 0 100%
 }
 
-@media (min-width:769px) {
+/* 769px */
+@media (min-width:1200px) {
     .menu-toggleable-left .close-menu {
         display: none
     }
@@ -18865,6 +18873,12 @@ div.availability {
     width: .8em
 }
 
+/* icons */
+.main-logo {
+    width: 30px;
+    height: 30px;
+}
+
 /* colors */
 
 .bg-blue-1 {
@@ -18946,7 +18960,6 @@ div.availability {
     width: 100% !important;
 }
 
-
 /* margins and paddings */
 .no-marginx-no-paddingx {
     margin-left: 0 !important;
@@ -18966,6 +18979,8 @@ div.availability {
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
+
+/**/
 
 .px-100 {
     margin-left: 100px;
@@ -19006,6 +19021,10 @@ div.availability {
 
 .pb-35 {
     padding-bottom: 35px;
+}
+
+.pt-1 {
+    padding-top: 1px;
 }
 
 .pt-10 {
@@ -19147,6 +19166,11 @@ div.availability {
     .div-trackOrderForm {
         margin-top: 30px;
     }
+}
+
+/* menu replace in all class */
+.menu-height{
+    height:60px;
 }
 
 /*

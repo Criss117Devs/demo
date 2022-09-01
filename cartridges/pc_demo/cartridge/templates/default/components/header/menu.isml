@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-info col-12 show-menu-movil-custom">
+<nav class="navbar navbar-expand-md bg-inverse col-12 show-menu-movil-custom">
     <div class="close-menu clearfix d-lg-none">
         <div class="back pull-left">
             <button role="button" aria-label="${Resource.msg('label.header.menu.back', 'common', null)}">
@@ -21,7 +21,7 @@
                         <li class="nav-item dropdown" role="presentation">
                             <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
                             <isset name="menuItem" value="${category}" scope="page" />
-                            <isinclude template="components/header/menuItem" />
+                            <isinclude template="components/header/menuItemsMobile" />
                         </li>
                     <iselse/>
                         <li class="nav-item" role="presentation">
@@ -30,10 +30,6 @@
                     </isif>
                 </isloop>
             </isif>
-            <a class="logo-home" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
-                <img class="hidden-md-down" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-                <img class="d-lg-none" src="${URLUtils.staticURL('/images/logo-small.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
-            </a>
             <isinclude url="${URLUtils.url('Account-Header', 'mobile', true)}" />
             <isinclude url="${URLUtils.url('Page-Locale', 'mobile', true)}" />
         </ul>

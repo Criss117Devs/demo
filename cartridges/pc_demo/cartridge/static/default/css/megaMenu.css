@@ -19,6 +19,7 @@
 
 .menu-items-desktop-ul-li {
     display: inline-block;
+    height: 60px;
 }
 
 .menu-items-desktop-ul-li-img-selected {
@@ -29,10 +30,21 @@
 
 .a1 {
     display: block;
-    padding: 18px;
+    padding: 20px 18px 10px 18px;
     font-family: sans-serif;
     font-size: 14px;
     text-decoration: none;
+}
+
+.user-name { 
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    padding-right: 5px;
 }
 
 .menu-items-desktop-ul-li-div {
@@ -92,11 +104,11 @@
     padding: 8px;
     display: inline-block;
 }
-
+/*
 .menu-items-desktop-logo-size {
     width: 30px;
     height: 30px;
-}
+}*/
 
 .menu-items-desktop-logo-size-1 {
     width: 20px;

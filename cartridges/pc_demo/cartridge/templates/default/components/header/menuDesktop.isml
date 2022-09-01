@@ -1,16 +1,16 @@
 <nav class="col-12 hide-menu-desktop-custom navbar navbar-expand-md no-marginy-no-paddingy no-marginx-no-paddingx nav-height-desktop bg-white-1 ">
     <div class="menu-group menu-items-desktop" role="navigation">
         <ul class="nav navbar-nav nav-height-deskto justify-content-center " role="menu">
-            <li class="center-items nav-height-desktop" role="presentation">
+            <li class="center-items nav-height-desktop pr-custom" role="presentation">
                 <a class="nav-height-deskto" href="${URLUtils.url('Home-Show')}" title="${ Resource.msgf('global.homepage.tooltip', 'common', null, Resource.msg('global.storename', 'common', null), Resource.msg('global.home', 'common', null)) }">
-                    <img class="menu-items-desktop-logo-size" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
+                    <img class="main-logo" src="${URLUtils.staticURL('/images/logo.svg')}" alt="${Resource.msg('global.storename', 'common', null)}" />
                 </a>
             </li>
             <isif condition="${pdict.categories}">
                 <isloop items="${pdict.categories}" var="category">
                     <isif condition="${category.subCategories}">
                         <li class="menu-items-desktop-ul-li pr-custom" role="presentation">
-                            <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="menu-items-desktop-ul-li-a a1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
+                            <a href="<isprint value="${category.url}" encoding="htmldoublequote"/>" id="${category.id}" class="menu-items-desktop-ul-li-a a1 " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">${category.name}</a>
                             <isset name="menuItem" value="${category}" scope="page" />
                             <isinclude template="components/header/menuItem" />
                         </li>
@@ -23,11 +23,11 @@
                     </isif>
                 </isloop>
             </isif>
-            <div class="center-items pr-30">
+            <li class="center-items pr-custom pt-1">
                 <isinclude template="components/header/search" />
-            </div>
+            </li>
             <li class="center-items pr-custom" role="presentation">
-                <a href="www.com.mx" class="menu-items-desktop-ul-li-a a1" role="button">
+                <a href="www.com.mx" class="menu-items-desktop-ul-li-a pt-1" role="button">
                     Localiza tu tienda
                 </a>
                 <span class="pl-20">
